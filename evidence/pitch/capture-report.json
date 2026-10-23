@@ -1,0 +1,46 @@
+[
+ {
+  "file": "reach-02-forecast.png",
+  "phones": [],
+  "device": "chrome"
+ },
+ {
+  "file": "reach-03-coverage.png",
+  "phones": [],
+  "device": "chrome"
+ },
+ {
+  "file": "reach-01-planning-supply-equipment-fuel.png",
+  "phones": [],
+  "device": "chrome",
+  "plan": "carelink-oi-proposal-oi-request-supply-3-1792674168148"
+ },
+ {
+  "file": "reach-05a-supply-unknown.png",
+  "phones": [],
+  "device": "chrome",
+  "plan": "carelink-oi-proposal-oi-request-supply-1-1792674168148"
+ },
+ {
+  "file": "reach-05b-supply-1-pack.png",
+  "phones": [],
+  "device": "chrome",
+  "plan": "carelink-oi-proposal-oi-request-supply-2-1792674168148"
+ },
+ {
+  "file": "reach-05c-supply-10-packs.png",
+  "phones": [],
+  "device": "chrome",
+  "plan": "carelink-oi-proposal-oi-request-supply-3-1792674168148"
+ },
+ {
+  "file": "reach-04a-referral-ack-task.png",
+  "phones": [],
+  "device": "chrome"
+ },
+ {
+  "file": "reach-04b-referral-card.png",
+  "phones": [],
+  "device": "chrome"
+ }
+]

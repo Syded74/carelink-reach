@@ -1,0 +1,10 @@
+{
+  "title": "Document outreach outcome",
+  "icon": "carelink-outreach",
+  "context": {
+    "person": false,
+    "place": true,
+    "expression": "contact.contact_type === 'carelink_household' && (user.carelink_role === 'carelink_cho')",
+    "permission": "can_carelink_visit"
+  }
+}

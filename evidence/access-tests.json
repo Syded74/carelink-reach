@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-10-21T20:09:18.214Z",
+  "checks": [
+    {
+      "check": "Community 1 replication excludes Community 3 household",
+      "passed": true
+    },
+    {
+      "check": "Direct cross-community document read blocked",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "check": "Community contact cannot list users",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "check": "CHO A has Community 1 and 2 only",
+      "passed": true
+    },
+    {
+      "check": "Supervisor scope excludes independent facility",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "check": "Community contact cannot write a coordination event through the API",
+      "status": 201,
+      "error": "forbidden",
+      "passed": true
+    },
+    {
+      "check": "Coordinator can append a coordination event but cannot rewrite it",
+      "passed": true
+    },
+    {
+      "check": "Maternal record replicates to CHO A only, not to CHO B in another community",
+      "passed": true
+    },
+    {
+      "check": "Community contact cannot write an ANC visit through the API",
+      "error": "forbidden",
+      "passed": true
+    },
+    {
+      "check": "Coordinator may acknowledge a referral but not create one (referral roles per state)",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Server-side checks cover which role may submit each CareLink form; they do not verify that the contact field matches the submitting user.",
+    "Maternal and child records are fictional seed data. Revocation and cached-device erasure are not validated."
+  ]
+}

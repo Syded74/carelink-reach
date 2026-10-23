@@ -1,0 +1,264 @@
+{
+  "status": "compared",
+  "baseline_method": "ewma_0.3",
+  "baseline_selected_through": "2026-04-13",
+  "windows": 26,
+  "scored_weeks": 66,
+  "intermittency": {
+    "village-a": {
+      "zero_share": 0.0,
+      "adi": 1.0,
+      "reported_weeks": 104
+    },
+    "village-b": {
+      "zero_share": 0.029,
+      "adi": 1.03,
+      "reported_weeks": 104
+    },
+    "village-c": {
+      "zero_share": 0.0,
+      "adi": 1.0,
+      "reported_weeks": 70
+    }
+  },
+  "table": {
+    "operational_baseline": {
+      "n": 66,
+      "mae": 2.787,
+      "rmse": 3.523,
+      "bias": -0.255,
+      "by_community": {
+        "village-a": 3.385,
+        "village-b": 1.777,
+        "village-c": 3.55
+      },
+      "low_demand_mae": 2.44,
+      "high_demand_mae": 3.178,
+      "family": "operational"
+    },
+    "CrostonClassic": {
+      "n": 66,
+      "mae": 2.61,
+      "rmse": 3.376,
+      "bias": -0.753,
+      "by_community": {
+        "village-a": 3.106,
+        "village-b": 1.64,
+        "village-c": 3.491
+      },
+      "low_demand_mae": 2.015,
+      "high_demand_mae": 3.282,
+      "family": "statsforecast"
+    },
+    "CrostonOptimized": {
+      "n": 66,
+      "mae": 2.693,
+      "rmse": 3.443,
+      "bias": -0.576,
+      "by_community": {
+        "village-a": 3.299,
+        "village-b": 1.651,
+        "village-c": 3.503
+      },
+      "low_demand_mae": 2.115,
+      "high_demand_mae": 3.345,
+      "family": "statsforecast"
+    },
+    "CrostonSBA": {
+      "n": 66,
+      "mae": 2.666,
+      "rmse": 3.485,
+      "bias": -1.131,
+      "by_community": {
+        "village-a": 3.146,
+        "village-b": 1.692,
+        "village-c": 3.584
+      },
+      "low_demand_mae": 1.894,
+      "high_demand_mae": 3.539,
+      "family": "statsforecast"
+    },
+    "TSB": {
+      "n": 66,
+      "mae": 2.701,
+      "rmse": 3.448,
+      "bias": -0.551,
+      "by_community": {
+        "village-a": 3.252,
+        "village-b": 1.692,
+        "village-c": 3.553
+      },
+      "low_demand_mae": 2.167,
+      "high_demand_mae": 3.305,
+      "family": "statsforecast"
+    },
+    "ADIDA": {
+      "n": 66,
+      "mae": 2.7,
+      "rmse": 3.446,
+      "bias": -0.578,
+      "by_community": {
+        "village-a": 3.299,
+        "village-b": 1.669,
+        "village-c": 3.503
+      },
+      "low_demand_mae": 2.129,
+      "high_demand_mae": 3.344,
+      "family": "statsforecast"
+    },
+    "IMAPA": {
+      "n": 66,
+      "mae": 2.7,
+      "rmse": 3.446,
+      "bias": -0.578,
+      "by_community": {
+        "village-a": 3.299,
+        "village-b": 1.669,
+        "village-c": 3.503
+      },
+      "low_demand_mae": 2.129,
+      "high_demand_mae": 3.344,
+      "family": "statsforecast"
+    },
+    "Naive": {
+      "n": 66,
+      "mae": 3.981,
+      "rmse": 4.969,
+      "bias": -0.429,
+      "by_community": {
+        "village-a": 4.731,
+        "village-b": 2.5,
+        "village-c": 5.34
+      },
+      "low_demand_mae": 3.52,
+      "high_demand_mae": 4.502,
+      "family": "statsforecast"
+    },
+    "WindowAverage": {
+      "n": 66,
+      "mae": 2.752,
+      "rmse": 3.553,
+      "bias": -0.418,
+      "by_community": {
+        "village-a": 3.298,
+        "village-b": 1.74,
+        "village-c": 3.618
+      },
+      "low_demand_mae": 2.239,
+      "high_demand_mae": 3.332,
+      "family": "statsforecast"
+    },
+    "SeasonalNaive": {
+      "n": 66,
+      "mae": 3.504,
+      "rmse": 4.72,
+      "bias": 0.43,
+      "by_community": {
+        "village-a": 4.577,
+        "village-b": 2.308,
+        "village-c": 3.735
+      },
+      "low_demand_mae": 2.611,
+      "high_demand_mae": 4.514,
+      "family": "statsforecast"
+    },
+    "HistoricAverage": {
+      "n": 66,
+      "mae": 2.619,
+      "rmse": 3.441,
+      "bias": -1.067,
+      "by_community": {
+        "village-a": 2.979,
+        "village-b": 1.629,
+        "village-c": 3.79
+      },
+      "low_demand_mae": 1.844,
+      "high_demand_mae": 3.494,
+      "family": "statsforecast"
+    },
+    "SES": {
+      "n": 66,
+      "mae": 2.813,
+      "rmse": 3.559,
+      "bias": -0.477,
+      "by_community": {
+        "village-a": 3.385,
+        "village-b": 1.777,
+        "village-c": 3.674
+      },
+      "low_demand_mae": 2.315,
+      "high_demand_mae": 3.375,
+      "family": "statsforecast"
+    },
+    "mlf_poisson": {
+      "n": 66,
+      "mae": 2.839,
+      "rmse": 3.798,
+      "bias": -0.563,
+      "by_community": {
+        "village-a": 3.379,
+        "village-b": 1.704,
+        "village-c": 3.945
+      },
+      "low_demand_mae": 2.126,
+      "high_demand_mae": 3.644,
+      "family": "mlforecast (experimental)"
+    },
+    "mlf_random_forest": {
+      "n": 66,
+      "mae": 3.001,
+      "rmse": 3.915,
+      "bias": -0.473,
+      "by_community": {
+        "village-a": 3.569,
+        "village-b": 1.806,
+        "village-c": 4.165
+      },
+      "low_demand_mae": 2.228,
+      "high_demand_mae": 3.874,
+      "family": "mlforecast (experimental)"
+    }
+  },
+  "ranking": [
+    "CrostonClassic",
+    "HistoricAverage",
+    "CrostonSBA",
+    "CrostonOptimized",
+    "ADIDA",
+    "IMAPA",
+    "TSB",
+    "WindowAverage",
+    "operational_baseline",
+    "SES",
+    "mlf_poisson",
+    "mlf_random_forest",
+    "SeasonalNaive",
+    "Naive"
+  ],
+  "decision": {
+    "operational_model": "operational_baseline",
+    "changed": false,
+    "reason": "No candidate met the rule (\u226510% lower pooled MAE and \u226410% worse for every community). Best StatsForecast model: CrostonClassic, MAE 2.61 vs 2.787 (6% lower overall; high-demand weeks 3.282 vs 3.178).",
+    "intermittency_note": "Demand here is not intermittent (at most 3% of reported weeks are zero), so Croston-family models are outside their intended use; their gains come from heavier smoothing."
+  },
+  "mlforecast": {
+    "status": "experimental",
+    "models": [
+      "mlf_poisson",
+      "mlf_random_forest"
+    ],
+    "features": [
+      "lags 1, 2, 4",
+      "rolling mean of last 4 (shifted 1)",
+      "ISO week"
+    ],
+    "excluded_inputs": [
+      "danger signs",
+      "clinical measurements",
+      "any person-level data"
+    ]
+  },
+  "missing_weeks_imputed_for_input_only": 34,
+  "synthetic_data": true,
+  "model_version": "carelink-oi-forecast 0.2.0"
+}

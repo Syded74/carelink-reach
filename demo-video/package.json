@@ -1,0 +1,12 @@
+{
+  "name": "carelink-reach-demo-video",
+  "private": true,
+  "description": "Records the CareLink Reach field workflow in the real app (Playwright + Chrome) and joins the clips (FFmpeg).",
+  "scripts": {
+    "record-flow": "node record-flow.js",
+    "build-flow": "node build-flow.js"
+  },
+  "dependencies": {
+    "playwright-core": "^1.48.2"
+  }
+}

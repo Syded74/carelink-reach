@@ -1,0 +1,10 @@
+{
+  "title": "Information and audio availability",
+  "icon": "carelink-audio",
+  "context": {
+    "person": false,
+    "place": true,
+    "expression": "contact.contact_type === 'carelink_household' && (user.carelink_role === 'carelink_community')",
+    "permission": "can_view_contacts"
+  }
+}

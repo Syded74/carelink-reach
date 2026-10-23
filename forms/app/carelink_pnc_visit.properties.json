@@ -1,0 +1,10 @@
+{
+  "title": "PNC visit",
+  "icon": "carelink-outreach",
+  "context": {
+    "person": true,
+    "place": false,
+    "expression": "contact.contact_type === 'carelink_individual' && summary.mch && !summary.is_child && user.carelink_role === 'carelink_cho'",
+    "permission": "can_carelink_mch"
+  }
+}

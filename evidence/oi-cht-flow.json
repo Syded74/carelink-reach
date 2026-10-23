@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-10-22T21:57:32.396Z",
+  "steps": [
+    {
+      "step": "1–3. Coordinator signed in to CareLink, opened the Outreach Intelligence tab and reviewed demand for Tolon, Gburimani and Dimabi",
+      "passed": true
+    },
+    {
+      "step": "4. The server optimiser (OR-Tools CP-SAT) produced the plan from operational records and delivered it back into CareLink",
+      "passed": true,
+      "detail": {
+        "served": {
+          "carelink-community-dimabi": 0,
+          "carelink-community-gburimani": 0,
+          "carelink-community-tolon": 0
+        },
+        "summary": "Covers 0 of 0 documented routine items with 0 trip(s); 0 remain unmet."
+      }
+    },
+    {
+      "step": "4b. A labelled test plan (including this suite's households) was generated for the rest of the flow and shown as \"Test plan\" in the tab",
+      "passed": true
+    },
+    {
+      "step": "5. Coordinator submitted the plan; the server accepted it (state: proposed)",
+      "passed": true
+    },
+    {
+      "step": "6–7. Supervisor reviewed, then approved while offline: shown as \"waiting to sync\", still \"Awaiting approval\", not on the server",
+      "passed": true
+    },
+    {
+      "step": "8. After synchronisation the server validated the approval; the tab now shows \"Approved\"",
+      "passed": true
+    },
+    {
+      "step": "8b. A supervisor cannot write a server acknowledgement or a decision in someone else's name (rejected by CouchDB)",
+      "passed": true
+    },
+    {
+      "step": "9. sabukari received 2 \"Planned outreach day\" task(s) from the approved plan; the planning tab is hidden from CHOs",
+      "passed": true,
+      "detail": {
+        "communities": [
+          "Dimabi",
+          "Tolon"
+        ]
+      }
+    },
+    {
+      "step": "10a. Two review decisions on the same step at once: both marked \"conflict\", neither applied; the coordinator reviewing their own plan is rejected; approved assignments stay fixed in the next plan",
+      "passed": true
+    },
+    {
+      "step": "10. With the network off and the app reloaded, the coordinator still reads the demand, the approved plan and its audit trail",
+      "passed": true
+    },
+    {
+      "step": "11. CHO recorded the planned outreach day as done; the record links the assignment and approved plan, and the task resolved",
+      "passed": true
+    },
+    {
+      "step": "12. After further worker cycles the plan still has 2 assignment(s) and no worker/day/community is assigned twice",
+      "passed": true
+    },
+    {
+      "step": "13. The coordinator assigned and scheduled the volunteer's request; the CHO's visit completed it against the same household and request; the volunteer sees \"completed\"",
+      "passed": true,
+      "detail": {
+        "household": "Alhassan-Tahiru Household, House 418"
+      }
+    }
+  ],
+  "proposal": "carelink-oi-proposal-oi-request-test-1792706281332"
+}

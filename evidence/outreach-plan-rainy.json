@@ -1,0 +1,273 @@
+{
+  "generated": "2026-10-21T18:25:23.913Z",
+  "today": "2026-10-21",
+  "resources": "resources.demo.json",
+  "demo": true,
+  "status": "RECOMMENDATION — requires coordinator approval",
+  "assessment": {
+    "weights": {
+      "approval_status": "pending_programme_review",
+      "open_request": 20,
+      "barrier": {
+        "distance": 10,
+        "transport_unavailable": 10,
+        "transport_cost": 10,
+        "household_decision": 5,
+        "language": 5,
+        "other": 5
+      },
+      "mch": {
+        "recordedConcern": 50,
+        "referralFollowUp": 30,
+        "missedAppointment": 25,
+        "appointmentDue": 20,
+        "scheduledFollowUp": 15,
+        "missingAssessment": 10,
+        "firstVisit": 10
+      },
+      "coverage_grace_days": 14,
+      "coverage_points_per_day": 1,
+      "coverage_cap": 30
+    },
+    "communities": [
+      {
+        "id": "carelink-demo-community-1",
+        "name": "DEMO · Baobab Grove",
+        "last_visit": "2026-10-21",
+        "days_since_visit": 0,
+        "coverage_points": 0,
+        "worker": "carelink-demo-cho-1",
+        "households": [
+          "carelink-demo-household-1",
+          "carelink-demo-household-2",
+          "carelink-demo-household-3",
+          "carelink-demo-household-4"
+        ],
+        "score": 225,
+        "explanation": "2× Referral awaiting outcome or follow-up (+60); 2× Appointment recorded as missed (+50); 1× Recorded concern needs CHO review (+50); 3× Complete missing assessment (+30); 1× Open outreach requests (+20); 1× Follow-up due (+15)"
+      },
+      {
+        "id": "carelink-demo-community-3",
+        "name": "DEMO · River Plain",
+        "last_visit": null,
+        "days_since_visit": null,
+        "coverage_points": 30,
+        "worker": "carelink-demo-cho-2",
+        "households": [
+          "carelink-demo-household-10",
+          "carelink-demo-household-8",
+          "carelink-demo-household-9"
+        ],
+        "score": 90,
+        "explanation": "3× Open outreach requests (+60); No visit recorded (+30)"
+      },
+      {
+        "id": "carelink-demo-community-2",
+        "name": "DEMO · Shea Valley",
+        "last_visit": "2026-10-21",
+        "days_since_visit": 0,
+        "coverage_points": 0,
+        "worker": "carelink-demo-cho-1",
+        "households": [
+          "carelink-demo-household-5",
+          "carelink-demo-household-6",
+          "carelink-demo-household-7"
+        ],
+        "score": 20,
+        "explanation": "1× Open outreach requests (+20)"
+      }
+    ]
+  },
+  "plan": {
+    "start": "2026-10-22",
+    "season": "rainy",
+    "days": [
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28"
+    ],
+    "budget_minutes": 480,
+    "visits": [
+      {
+        "date": "2026-10-22",
+        "weekday": "thu",
+        "worker": "carelink-demo-cho-1",
+        "worker_name": "DEMO CHO A",
+        "vehicle": "motorbike-1",
+        "travel_minutes": 185,
+        "service_minutes": 140,
+        "total_minutes": 325,
+        "households": 4,
+        "stops": [
+          {
+            "community": "carelink-demo-community-1",
+            "community_name": "DEMO · Baobab Grove",
+            "arrive_after_minutes": 60,
+            "targets": [
+              {
+                "id": "carelink-demo-household-2",
+                "name": "DEMO · Household 02",
+                "score": 125,
+                "why": [
+                  "Complete missing assessment · DEMO · Abena Owusu 1817 (fictional) (+10)",
+                  "Recorded concern needs CHO review · DEMO · Abena Owusu 1817 (fictional) (+50)",
+                  "Referral awaiting outcome or follow-up · DEMO · Abena Owusu 1817 (fictional) (+30)",
+                  "Complete missing assessment · DEMO · Yaw Owusu 1817 (fictional) (+10)",
+                  "Appointment recorded as missed · DEMO · Yaw Owusu 1817 (fictional) (+25)"
+                ],
+                "records": [
+                  "01a15faf-00f9-744b-b51e-c23ac2870ad5",
+                  "0aac00bb-39b5-4142-8fc9-3bcf6e4bdfaa",
+                  "01a15faf-4b2f-744b-b51e-f14292b042ab",
+                  "81c538b7-d2f9-465d-93bd-36e68ee61b2a"
+                ],
+                "waited_because": []
+              },
+              {
+                "id": "carelink-demo-household-1",
+                "name": "DEMO · Household 01",
+                "score": 80,
+                "why": [
+                  "Complete missing assessment · DEMO · Kojo Asante (fictional) (+10)",
+                  "Follow-up due · DEMO · Efua Asante (fictional) (+15)",
+                  "Referral awaiting outcome or follow-up · DEMO · Efua Asante (fictional) (+30)",
+                  "Appointment recorded as missed · DEMO · Efua Asante (fictional) (+25)"
+                ],
+                "records": [
+                  "carelink-demo-mch-cwc-1",
+                  "carelink-demo-mch-anc-2",
+                  "demo-referral-1",
+                  "demo-appointment-1"
+                ],
+                "waited_because": []
+              },
+              {
+                "id": "carelink-demo-household-3",
+                "name": "DEMO · Household 03",
+                "score": 20,
+                "why": [
+                  "Open outreach request (awaiting assignment) (+20)"
+                ],
+                "records": [
+                  "carelink-demo-request-6"
+                ],
+                "waited_because": []
+              }
+            ]
+          },
+          {
+            "community": "carelink-demo-community-2",
+            "community_name": "DEMO · Shea Valley",
+            "arrive_after_minutes": 205,
+            "targets": [
+              {
+                "id": "carelink-demo-household-6",
+                "name": "DEMO · Household 06",
+                "score": 20,
+                "why": [
+                  "Open outreach request (awaiting assignment) (+20)"
+                ],
+                "records": [
+                  "carelink-demo-request-7"
+                ],
+                "waited_because": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2026-10-27",
+        "weekday": "tue",
+        "worker": "carelink-demo-cho-2",
+        "worker_name": "DEMO CHO B",
+        "vehicle": "motorbike-1",
+        "travel_minutes": 300,
+        "service_minutes": 140,
+        "total_minutes": 440,
+        "households": 4,
+        "stops": [
+          {
+            "community": "carelink-demo-community-3",
+            "community_name": "DEMO · River Plain",
+            "arrive_after_minutes": 150,
+            "targets": [
+              {
+                "id": "community:carelink-demo-community-3",
+                "name": "Community check-in · DEMO · River Plain",
+                "score": 30,
+                "why": [
+                  "No visit recorded in this community (+30)"
+                ],
+                "records": [],
+                "waited_because": [
+                  "2026-10-22: no vehicle free (used by a higher-need trip)",
+                  "2026-10-23: DEMO CHO B does not work on fri",
+                  "2026-10-26: DEMO CHO B does not work on mon"
+                ]
+              },
+              {
+                "id": "carelink-demo-household-10",
+                "name": "DEMO · Household 10",
+                "score": 20,
+                "why": [
+                  "Open outreach request (awaiting assignment) (+20)"
+                ],
+                "records": [
+                  "carelink-demo-request-8"
+                ],
+                "waited_because": [
+                  "2026-10-22: no vehicle free (used by a higher-need trip)",
+                  "2026-10-23: DEMO CHO B does not work on fri",
+                  "2026-10-26: DEMO CHO B does not work on mon"
+                ]
+              },
+              {
+                "id": "carelink-demo-household-8",
+                "name": "DEMO · Household 08",
+                "score": 20,
+                "why": [
+                  "Open outreach request (scheduled) (+20)"
+                ],
+                "records": [
+                  "carelink-demo-request-4"
+                ],
+                "waited_because": [
+                  "2026-10-22: no vehicle free (used by a higher-need trip)",
+                  "2026-10-23: DEMO CHO B does not work on fri",
+                  "2026-10-26: DEMO CHO B does not work on mon"
+                ]
+              },
+              {
+                "id": "carelink-demo-household-9",
+                "name": "DEMO · Household 09",
+                "score": 20,
+                "why": [
+                  "Open outreach request (scheduled) (+20)"
+                ],
+                "records": [
+                  "carelink-demo-request-5"
+                ],
+                "waited_because": [
+                  "2026-10-22: no vehicle free (used by a higher-need trip)",
+                  "2026-10-23: DEMO CHO B does not work on fri",
+                  "2026-10-26: DEMO CHO B does not work on mon"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "unmet": [],
+    "totals": {
+      "targets": 8,
+      "scheduled": 8,
+      "unmet": 0,
+      "need_points_scheduled": 335,
+      "need_points_total": 335
+    }
+  }
+}

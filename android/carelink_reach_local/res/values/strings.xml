@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">CareLink (local)</string>
+	<!-- Local CHT server on the development Mac, reached through `adb reverse tcp:5988 tcp:5988`.
+	     Staying on localhost keeps the WebView a secure context, so CHT's offline service worker works. -->
+	<string name="app_host">localhost:5988</string>
+	<string name="scheme">http</string>
+</resources>

@@ -1,0 +1,10 @@
+{
+  "title": "Resolve task",
+  "icon": "carelink-request",
+  "context": {
+    "person": true,
+    "place": false,
+    "expression": "false",
+    "permission": "can_carelink_mch"
+  }
+}

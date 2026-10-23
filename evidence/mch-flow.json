@@ -1,0 +1,97 @@
+{
+  "timestamp": "2026-10-22T21:45:36.202Z",
+  "run": "2145",
+  "today": "2026-10-22",
+  "steps": [
+    {
+      "step": "1. CHO registered the mother for ANC; sex F and assigned CHO recorded on the server",
+      "passed": true
+    },
+    {
+      "step": "1b. Registering the same mother again shows \"Possible duplicate contacts found\"; the existing record stays and nothing new is saved",
+      "passed": true
+    },
+    {
+      "step": "2. \"First ANC visit due\" task appeared for the new mother",
+      "passed": true
+    },
+    {
+      "step": "3. Pregnancy recorded with the EDD as typed",
+      "passed": true
+    },
+    {
+      "step": "4. ANC booking saved: out-of-range weight had to be confirmed; missing vitals, danger sign and follow-up date derived",
+      "passed": true,
+      "detail": {
+        "missing_vitals": "gestational_age_weeks fundal_height_cm fetal_heart_rate_bpm haemoglobin_g_dL",
+        "quality_issues": "weight_kg"
+      }
+    },
+    {
+      "step": "5. Concern, missing-assessment and follow-up tasks appeared; first-visit task resolved",
+      "passed": true
+    },
+    {
+      "step": "6. Referral started from the concern task (state created)",
+      "passed": true
+    },
+    {
+      "step": "7. Follow-up task resolved with a reason; the task left the list",
+      "passed": true
+    },
+    {
+      "step": "8. Newborn registered with the mother link; delivery recorded against the pregnancy, listing the child",
+      "passed": true
+    },
+    {
+      "step": "9. Newborn PNC saved against the child, linked to the mother and delivery",
+      "passed": true
+    },
+    {
+      "step": "10. CWC visit saved with one recorded dose (no schedule or due date shown)",
+      "passed": true
+    },
+    {
+      "step": "11. Appointment due today raised a task; recording it missed raised the missed-appointment task",
+      "passed": true
+    },
+    {
+      "step": "12. Mother profile shows stage, band, next due, pregnancy, delivery and referral cards",
+      "passed": true
+    },
+    {
+      "step": "13. The receiving facility's coordinator got \"Referral awaiting acknowledgement\" and acknowledged it; the event names the coordinator",
+      "passed": true
+    },
+    {
+      "step": "13b. The originating CHO sees the receiving facility and \"Acknowledged by rseidu\" on the mother's referral card",
+      "passed": true
+    },
+    {
+      "step": "14. Supervisor targets list the maternal and child counts",
+      "passed": true
+    },
+    {
+      "step": "15. Full history kept: pregnancy, ANC, delivery, resolution and referral (created → acknowledged); the server refused a CHO edit and delete",
+      "passed": true,
+      "detail": {
+        "edit": "CareLink coordination records are append-only; submit a new event instead.",
+        "delete": "forbidden"
+      }
+    },
+    {
+      "step": "16. All 10 clinical records carry approval_status pending_clinical_review",
+      "passed": true
+    },
+    {
+      "step": "17. CHO replicates her own Tolon records but not a Nyankpala household (direct read returned 403)",
+      "passed": true
+    },
+    {
+      "step": "18. CWC visit saved offline, kept after an offline reload, then synchronized to the server",
+      "passed": true
+    }
+  ],
+  "created": 12,
+  "note": "Made-up people marked record_origin test. Tasks and states are derived from recorded events; no clinical schedule is applied."
+}

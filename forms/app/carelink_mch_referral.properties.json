@@ -1,0 +1,10 @@
+{
+  "title": "Referral",
+  "icon": "carelink-outreach",
+  "context": {
+    "person": true,
+    "place": false,
+    "expression": "contact.contact_type === 'carelink_individual' && summary.mch && ['carelink_cho', 'carelink_coordinator', 'carelink_supervisor'].includes(user.carelink_role)",
+    "permission": "can_carelink_mch"
+  }
+}

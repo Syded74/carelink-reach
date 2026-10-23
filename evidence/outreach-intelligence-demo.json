@@ -1,0 +1,748 @@
+{
+  "estimate": {
+    "dataset_id": "hackathon-villages",
+    "as_of": "2026-10-21",
+    "method": "mean_4",
+    "method_comparison": {
+      "last_value": {
+        "n": 66,
+        "mae": 3.91,
+        "rmse": 4.89,
+        "bias": -0.15
+      },
+      "mean_4": {
+        "n": 66,
+        "mae": 2.78,
+        "rmse": 3.5,
+        "bias": -0.18
+      },
+      "ewma_0.3": {
+        "n": 66,
+        "mae": 2.79,
+        "rmse": 3.52,
+        "bias": -0.25
+      },
+      "seasonal_naive_52": {
+        "n": 61,
+        "mae": 3.52,
+        "rmse": 4.76,
+        "bias": 0.67
+      }
+    },
+    "model_version": "carelink-oi-forecast 0.1.0",
+    "communities": [
+      {
+        "community_id": "village-a",
+        "community": "Village A (fictional)",
+        "barrier_level": "high",
+        "forecast_period": "week of 2026-10-26",
+        "estimate": 11.5,
+        "unit": "routine outreach work items per week",
+        "method": "mean_4",
+        "model_version": "carelink-oi-forecast 0.1.0",
+        "validation": {
+          "n": 26,
+          "mae": 3.3,
+          "rmse": 3.92,
+          "bias": -0.24
+        },
+        "validation_status": "back-tested on synthetic history (not validated on real data)",
+        "input_period": "2024-10-21 to 2026-10-12",
+        "reported_weeks": 104,
+        "data_coverage_12w": 1.0,
+        "recent_weeks": [
+          10,
+          16,
+          6,
+          14
+        ],
+        "recent_mean": 11.5,
+        "contributors_last_4_weeks": {
+          "requests_created": 21,
+          "followups_due": 14,
+          "missed_appointments": 6,
+          "referrals_open": 5,
+          "transport_barriers": 5
+        },
+        "current": {
+          "community_id": "village-a",
+          "as_of": "2026-10-21",
+          "pending_followups": 12,
+          "urgent_items_excluded": 0,
+          "last_visit": "2026-09-30"
+        },
+        "warnings": [
+          "Synthetic demonstration history: not evidence about a real community."
+        ],
+        "explanation": "Village A (fictional) has 12 documented routine follow-up item(s) pending now; in the last 4 reported weeks, workload came mostly from new help requests (21) and follow-ups falling due (14); 5 transport difficulties were reported in those weeks. Estimated 11.5 work items for the week of 2026-10-26, based on the average of the last 4 reported weeks; in back-testing this was typically off by about 3.3 items. Synthetic demonstration history: not evidence about a real community."
+      },
+      {
+        "community_id": "village-b",
+        "community": "Village B (fictional)",
+        "barrier_level": "low",
+        "forecast_period": "week of 2026-10-26",
+        "estimate": 4.8,
+        "unit": "routine outreach work items per week",
+        "method": "mean_4",
+        "model_version": "carelink-oi-forecast 0.1.0",
+        "validation": {
+          "n": 26,
+          "mae": 1.74,
+          "rmse": 2.22,
+          "bias": -0.11
+        },
+        "validation_status": "back-tested on synthetic history (not validated on real data)",
+        "input_period": "2024-10-21 to 2026-10-12",
+        "reported_weeks": 104,
+        "data_coverage_12w": 1.0,
+        "recent_weeks": [
+          7,
+          2,
+          6,
+          4
+        ],
+        "recent_mean": 4.8,
+        "contributors_last_4_weeks": {
+          "requests_created": 10,
+          "followups_due": 5,
+          "missed_appointments": 4,
+          "referrals_open": 0,
+          "transport_barriers": 1
+        },
+        "current": {
+          "community_id": "village-b",
+          "as_of": "2026-10-21",
+          "pending_followups": 5,
+          "urgent_items_excluded": 0,
+          "last_visit": "2026-10-14"
+        },
+        "warnings": [
+          "Synthetic demonstration history: not evidence about a real community."
+        ],
+        "explanation": "Village B (fictional) has 5 documented routine follow-up item(s) pending now; in the last 4 reported weeks, workload came mostly from new help requests (10) and follow-ups falling due (5); 1 transport difficulty was reported in those weeks. Estimated 4.8 work items for the week of 2026-10-26, based on the average of the last 4 reported weeks; in back-testing this was typically off by about 1.74 items. Synthetic demonstration history: not evidence about a real community."
+      },
+      {
+        "community_id": "village-c",
+        "community": "Village C (fictional)",
+        "barrier_level": "high",
+        "forecast_period": "week of 2026-10-26",
+        "estimate": 7.5,
+        "unit": "routine outreach work items per week",
+        "method": "mean_4",
+        "model_version": "carelink-oi-forecast 0.1.0",
+        "validation": {
+          "n": 14,
+          "mae": 3.77,
+          "rmse": 4.49,
+          "bias": -0.2
+        },
+        "validation_status": "back-tested on synthetic history (not validated on real data)",
+        "input_period": "2024-10-21 to 2026-10-12",
+        "reported_weeks": 70,
+        "data_coverage_12w": 0.58,
+        "recent_weeks": [
+          null,
+          5,
+          null,
+          8
+        ],
+        "recent_mean": 7.5,
+        "contributors_last_4_weeks": {
+          "requests_created": 4,
+          "followups_due": 2,
+          "missed_appointments": 5,
+          "referrals_open": 2,
+          "transport_barriers": 2
+        },
+        "current": {
+          "community_id": "village-c",
+          "as_of": "2026-10-21",
+          "pending_followups": 9,
+          "urgent_items_excluded": 0,
+          "last_visit": "2026-08-26"
+        },
+        "warnings": [
+          "Synthetic demonstration history: not evidence about a real community.",
+          "Only 58% of the last 12 weeks reached the server. Low reporting can mean poor access, not low need."
+        ],
+        "explanation": "Village C (fictional) has 9 documented routine follow-up item(s) pending now; in the last 4 reported weeks, workload came mostly from recorded missed appointments (5) and new help requests (4); 2 transport difficulties were reported in those weeks. Estimated 7.5 work items for the week of 2026-10-26, based on the average of the last 4 reported weeks; in back-testing this was typically off by about 3.77 items. Synthetic demonstration history: not evidence about a real community. Only 58% of the last 12 weeks reached the server. Low reporting can mean poor access, not low need."
+      }
+    ]
+  },
+  "ml_experiment": {
+    "status": "experimental",
+    "model": "PoissonRegressor(alpha=1.0)",
+    "features": [
+      "lag 1 week",
+      "lag 2 weeks",
+      "mean of last 4 reported weeks",
+      "season (sin)",
+      "season (cos)",
+      "transport barriers, last 4 weeks",
+      "share of last 4 weeks unreported",
+      "community barrier level"
+    ],
+    "excluded_inputs": [
+      "danger signs",
+      "clinical measurements",
+      "any person-level data"
+    ],
+    "train_weeks": "2024-12-16 to 2026-04-13",
+    "test_weeks": "2026-04-20 to 2026-10-12",
+    "baseline": "ewma_0.3",
+    "ml": {
+      "n": 66,
+      "mae": 2.8,
+      "rmse": 3.75,
+      "bias": -0.5
+    },
+    "baseline_metrics": {
+      "n": 66,
+      "mae": 2.79,
+      "rmse": 3.52,
+      "bias": -0.25
+    },
+    "by_community": {
+      "village-a": {
+        "ml": {
+          "n": 26,
+          "mae": 3.36,
+          "rmse": 4.35,
+          "bias": -1.37
+        },
+        "baseline": {
+          "n": 26,
+          "mae": 3.39,
+          "rmse": 3.98,
+          "bias": -0.33
+        }
+      },
+      "village-b": {
+        "ml": {
+          "n": 26,
+          "mae": 1.62,
+          "rmse": 2.09,
+          "bias": 0.46
+        },
+        "baseline": {
+          "n": 26,
+          "mae": 1.78,
+          "rmse": 2.21,
+          "bias": -0.09
+        }
+      },
+      "village-c": {
+        "ml": {
+          "n": 14,
+          "mae": 3.94,
+          "rmse": 4.79,
+          "bias": -0.68
+        },
+        "baseline": {
+          "n": 14,
+          "mae": 3.55,
+          "rmse": 4.48,
+          "bias": -0.42
+        }
+      }
+    },
+    "low_demand_weeks": {
+      "ml": {
+        "n": 35,
+        "mae": 2.25,
+        "rmse": 3.0,
+        "bias": 1.71
+      },
+      "baseline": {
+        "n": 35,
+        "mae": 2.44,
+        "rmse": 3.1,
+        "bias": 1.44
+      }
+    },
+    "high_demand_weeks": {
+      "ml": {
+        "n": 31,
+        "mae": 3.41,
+        "rmse": 4.44,
+        "bias": -3.0
+      },
+      "baseline": {
+        "n": 31,
+        "mae": 3.18,
+        "rmse": 3.95,
+        "bias": -2.17
+      }
+    },
+    "synthetic_data": true,
+    "conclusion": "On held-out weeks the Poisson model's MAE is 2.8 vs 2.79 for the ewma_0.3 baseline (not lower; this baseline was chosen on the training weeks only, so it can differ from the one used for the live estimates). This is synthetic data, so it shows the pipeline works, not that the model is better for real communities. The planner keeps using the transparent baseline; the model stays experimental."
+  },
+  "runs": [
+    {
+      "scenario": "baseline",
+      "label": "1 nurse, 1 motorbike, 6 hours, 1 day",
+      "status": "OPTIMAL",
+      "served": {
+        "village-a": 12,
+        "village-b": 3,
+        "village-c": 0
+      },
+      "trips": [
+        {
+          "worker": "nurse-1",
+          "worker_name": "Nurse 1 (fictional)",
+          "day": "2026-10-22",
+          "vehicle": "motorbike-1",
+          "route": [
+            "facility",
+            "village-a",
+            "village-b",
+            "facility"
+          ],
+          "legs_minutes": [
+            45,
+            30,
+            20
+          ],
+          "served": {
+            "village-a": 12,
+            "village-b": 3
+          },
+          "travel_minutes": 95,
+          "service_minutes": 265,
+          "total_minutes": 360,
+          "available_minutes": 360,
+          "slack_minutes": 0
+        }
+      ],
+      "explanation": {
+        "summary": "Covers 15 of 26 documented routine items with 1 trip(s); 11 remain unmet.",
+        "communities": {
+          "village-a": "Village A (fictional) is included (Nurse 1 (fictional) on 2026-10-22: 12 item(s)): 12 documented routine follow-up item(s) pending, high reported transport barrier. Covers all item(s); priority weight 1.25.",
+          "village-b": "Village B (fictional) is included (Nurse 1 (fictional) on 2026-10-22: 3 item(s)): 5 documented routine follow-up item(s) pending. Covers 3 of 5 item(s); priority weight 1.0. Village B (fictional) is partly covered (3 of 5): covering one more item there would lower the weighted items served from 18.0 to 17.75 (travel 95 \u2192 95 min), so time is better spent where more documented items can be covered. 2 item(s) remain visible for the next planning cycle.",
+          "village-c": "Village C (fictional) is deferred: covering one more item there would lower the weighted items served from 18.0 to 15.2 (travel 95 \u2192 130 min), so time is better spent where more documented items can be covered. 9 item(s) remain visible for the next planning cycle. It has high access barriers or poor reporting: consider the minimum-coverage policy."
+        },
+        "binding": [
+          "Working hours: Nurse 1 (fictional)'s day on 2026-10-22 is full (360 of 360 minutes)."
+        ],
+        "what_if": [
+          {
+            "change": "one more working hour for each worker",
+            "extra_items_served": 2,
+            "served": {
+              "village-a": 12,
+              "village-b": 5,
+              "village-c": 0
+            }
+          },
+          {
+            "change": "one more vehicle each day",
+            "extra_items_served": 0,
+            "served": {
+              "village-a": 12,
+              "village-b": 3,
+              "village-c": 0
+            }
+          }
+        ],
+        "needs_more_resources": [
+          {
+            "change": "one more working hour for each worker",
+            "extra_items_served": 2,
+            "served": {
+              "village-a": 12,
+              "village-b": 5,
+              "village-c": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "longer-day",
+      "label": "1 nurse, 1 motorbike, 8 hours",
+      "status": "OPTIMAL",
+      "served": {
+        "village-a": 10,
+        "village-b": 0,
+        "village-c": 9
+      },
+      "trips": [
+        {
+          "worker": "nurse-1",
+          "worker_name": "Nurse 1 (fictional)",
+          "day": "2026-10-22",
+          "vehicle": "motorbike-1",
+          "route": [
+            "facility",
+            "village-a",
+            "village-c",
+            "facility"
+          ],
+          "legs_minutes": [
+            45,
+            40,
+            60
+          ],
+          "served": {
+            "village-a": 10,
+            "village-c": 9
+          },
+          "travel_minutes": 145,
+          "service_minutes": 325,
+          "total_minutes": 470,
+          "available_minutes": 480,
+          "slack_minutes": 10
+        }
+      ],
+      "explanation": {
+        "summary": "Covers 19 of 26 documented routine items with 1 trip(s); 7 remain unmet.",
+        "communities": {
+          "village-a": "Village A (fictional) is included (Nurse 1 (fictional) on 2026-10-22: 10 item(s)): 12 documented routine follow-up item(s) pending, high reported transport barrier. Covers 10 of 12 item(s); priority weight 1.25. Village A (fictional) is partly covered (10 of 12): covering one more item there would lower the weighted items served from 24.7 to 24.59 (travel 145 \u2192 145 min), so time is better spent where more documented items can be covered. 2 item(s) remain visible for the next planning cycle.",
+          "village-c": "Village C (fictional) is included (Nurse 1 (fictional) on 2026-10-22: 9 item(s)): 9 documented routine follow-up item(s) pending, high reported transport barrier, only 58% of recent weeks reported (possible access gap). Covers all item(s); priority weight 1.355.",
+          "village-b": "Village B (fictional) is deferred: covering one more item there would lower the weighted items served from 24.7 to 23.2 (travel 145 \u2192 150 min), so time is better spent where more documented items can be covered. 5 item(s) remain visible for the next planning cycle."
+        },
+        "binding": [
+          "Working hours: Nurse 1 (fictional)'s day on 2026-10-22 is full (470 of 480 minutes)."
+        ],
+        "what_if": [
+          {
+            "change": "one more working hour for each worker",
+            "extra_items_served": 3,
+            "served": {
+              "village-a": 12,
+              "village-b": 1,
+              "village-c": 9
+            }
+          },
+          {
+            "change": "one more vehicle each day",
+            "extra_items_served": 0,
+            "served": {
+              "village-a": 10,
+              "village-b": 0,
+              "village-c": 9
+            }
+          }
+        ],
+        "needs_more_resources": [
+          {
+            "change": "one more working hour for each worker",
+            "extra_items_served": 3,
+            "served": {
+              "village-a": 12,
+              "village-b": 1,
+              "village-c": 9
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "second-nurse-no-vehicle",
+      "label": "2 nurses, still 1 motorbike, 6 hours",
+      "status": "OPTIMAL",
+      "served": {
+        "village-a": 12,
+        "village-b": 3,
+        "village-c": 0
+      },
+      "trips": [
+        {
+          "worker": "nurse-1",
+          "worker_name": "Nurse 1 (fictional)",
+          "day": "2026-10-22",
+          "vehicle": "motorbike-1",
+          "route": [
+            "facility",
+            "village-a",
+            "village-b",
+            "facility"
+          ],
+          "legs_minutes": [
+            45,
+            30,
+            20
+          ],
+          "served": {
+            "village-a": 12,
+            "village-b": 3
+          },
+          "travel_minutes": 95,
+          "service_minutes": 265,
+          "total_minutes": 360,
+          "available_minutes": 360,
+          "slack_minutes": 0
+        }
+      ],
+      "explanation": {
+        "summary": "Covers 15 of 26 documented routine items with 1 trip(s); 11 remain unmet.",
+        "communities": {
+          "village-a": "Village A (fictional) is included (Nurse 1 (fictional) on 2026-10-22: 12 item(s)): 12 documented routine follow-up item(s) pending, high reported transport barrier. Covers all item(s); priority weight 1.25.",
+          "village-b": "Village B (fictional) is included (Nurse 1 (fictional) on 2026-10-22: 3 item(s)): 5 documented routine follow-up item(s) pending. Covers 3 of 5 item(s); priority weight 1.0. Village B (fictional) is partly covered (3 of 5): covering one more item there would lower the weighted items served from 18.0 to 17.75 (travel 95 \u2192 95 min), so time is better spent where more documented items can be covered. 2 item(s) remain visible for the next planning cycle.",
+          "village-c": "Village C (fictional) is deferred: covering one more item there would lower the weighted items served from 18.0 to 15.2 (travel 95 \u2192 130 min), so time is better spent where more documented items can be covered. 9 item(s) remain visible for the next planning cycle. It has high access barriers or poor reporting: consider the minimum-coverage policy."
+        },
+        "binding": [
+          "Working hours: Nurse 1 (fictional)'s day on 2026-10-22 is full (360 of 360 minutes).",
+          "Transport: Nurse 2 (fictional) available on 2026-10-22, but every vehicle is already in use."
+        ],
+        "what_if": [
+          {
+            "change": "one more working hour for each worker",
+            "extra_items_served": 4,
+            "served": {
+              "village-a": 10,
+              "village-b": 0,
+              "village-c": 9
+            }
+          },
+          {
+            "change": "one more vehicle each day",
+            "extra_items_served": 11,
+            "served": {
+              "village-a": 12,
+              "village-b": 5,
+              "village-c": 9
+            }
+          }
+        ],
+        "needs_more_resources": [
+          {
+            "change": "one more working hour for each worker",
+            "extra_items_served": 4,
+            "served": {
+              "village-a": 10,
+              "village-b": 0,
+              "village-c": 9
+            }
+          },
+          {
+            "change": "one more vehicle each day",
+            "extra_items_served": 11,
+            "served": {
+              "village-a": 12,
+              "village-b": 5,
+              "village-c": 9
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "second-nurse-second-vehicle",
+      "label": "2 nurses, motorbike + pickup, 6 hours",
+      "status": "OPTIMAL",
+      "served": {
+        "village-a": 12,
+        "village-b": 5,
+        "village-c": 9
+      },
+      "trips": [
+        {
+          "worker": "nurse-1",
+          "worker_name": "Nurse 1 (fictional)",
+          "day": "2026-10-22",
+          "vehicle": "motorbike-1",
+          "route": [
+            "facility",
+            "village-a",
+            "village-b",
+            "facility"
+          ],
+          "legs_minutes": [
+            45,
+            30,
+            20
+          ],
+          "served": {
+            "village-a": 12,
+            "village-b": 3
+          },
+          "travel_minutes": 95,
+          "service_minutes": 265,
+          "total_minutes": 360,
+          "available_minutes": 360,
+          "slack_minutes": 0
+        },
+        {
+          "worker": "nurse-2",
+          "worker_name": "Nurse 2 (fictional)",
+          "day": "2026-10-22",
+          "vehicle": "pickup-1",
+          "route": [
+            "facility",
+            "village-b",
+            "village-c",
+            "facility"
+          ],
+          "legs_minutes": [
+            20,
+            50,
+            60
+          ],
+          "served": {
+            "village-b": 2,
+            "village-c": 9
+          },
+          "travel_minutes": 130,
+          "service_minutes": 205,
+          "total_minutes": 335,
+          "available_minutes": 360,
+          "slack_minutes": 25
+        }
+      ],
+      "explanation": {
+        "summary": "Covers 26 of 26 documented routine items with 2 trip(s); 0 remain unmet.",
+        "communities": {
+          "village-a": "Village A (fictional) is included (Nurse 1 (fictional) on 2026-10-22: 12 item(s)): 12 documented routine follow-up item(s) pending, high reported transport barrier. Covers all item(s); priority weight 1.25.",
+          "village-b": "Village B (fictional) is included (Nurse 1 (fictional) on 2026-10-22: 3 item(s); Nurse 2 (fictional) on 2026-10-22: 2 item(s)): 5 documented routine follow-up item(s) pending. Covers all item(s); priority weight 1.0.",
+          "village-c": "Village C (fictional) is included (Nurse 2 (fictional) on 2026-10-22: 9 item(s)): 9 documented routine follow-up item(s) pending, high reported transport barrier, only 58% of recent weeks reported (possible access gap). Covers all item(s); priority weight 1.355."
+        },
+        "binding": [
+          "Working hours: Nurse 1 (fictional)'s day on 2026-10-22 is full (360 of 360 minutes)."
+        ],
+        "what_if": [
+          {
+            "change": "one more working hour for each worker",
+            "extra_items_served": 0,
+            "served": {
+              "village-a": 12,
+              "village-b": 5,
+              "village-c": 9
+            }
+          },
+          {
+            "change": "one more vehicle each day",
+            "extra_items_served": 0,
+            "served": {
+              "village-a": 12,
+              "village-b": 5,
+              "village-c": 9
+            }
+          }
+        ],
+        "needs_more_resources": []
+      }
+    },
+    {
+      "scenario": "infeasible-confirmed",
+      "label": "Confirmed full Village C visit in a 3-hour day",
+      "status": "INFEASIBLE",
+      "served": {},
+      "trips": [],
+      "explanation": {
+        "summary": "No feasible plan: the constraints cannot all be met. Nothing was scheduled.",
+        "reasons": [
+          "Confirmed assignment for Village C (fictional) needs at least 275 minutes (round trip 120 + setup 20 + 9 x 15), but Nurse 1 (fictional) has 180 minutes."
+        ],
+        "communities": {},
+        "binding": [],
+        "needs_more_resources": null
+      }
+    }
+  ],
+  "fairness_policy_run": {
+    "planner_version": "carelink-oi-planner 0.1.0",
+    "solver": "OR-Tools CP-SAT",
+    "policy": {
+      "fairness_weight": 0.5,
+      "growth_weight": 0.3,
+      "travel_penalty_per_minute": 0.01,
+      "continuity_bonus": 0.5,
+      "previous_plan_communities": [],
+      "min_coverage": {
+        "enabled": true,
+        "communities": [
+          "village-c"
+        ],
+        "min_followups": 1
+      }
+    },
+    "priorities": {
+      "village-a": {
+        "weight": 1.25,
+        "underserved_index": 0.5,
+        "barrier": 1.0,
+        "coverage_gap": 0.0,
+        "growth": 0.0
+      },
+      "village-b": {
+        "weight": 1.0,
+        "underserved_index": 0.0,
+        "barrier": 0.0,
+        "coverage_gap": 0.0,
+        "growth": 0.0
+      },
+      "village-c": {
+        "weight": 1.355,
+        "underserved_index": 0.71,
+        "barrier": 1.0,
+        "coverage_gap": 0.42,
+        "growth": 0.0
+      }
+    },
+    "names": {
+      "village-a": "Village A (fictional)",
+      "village-b": "Village B (fictional)",
+      "village-c": "Village C (fictional)"
+    },
+    "pending": {
+      "village-a": 12,
+      "village-b": 5,
+      "village-c": 9
+    },
+    "days": [
+      "2026-10-22"
+    ],
+    "status": "OPTIMAL",
+    "objective": 13.895,
+    "trips": [
+      {
+        "worker": "nurse-1",
+        "worker_name": "Nurse 1 (fictional)",
+        "day": "2026-10-22",
+        "vehicle": "motorbike-1",
+        "route": [
+          "facility",
+          "village-b",
+          "village-c",
+          "facility"
+        ],
+        "legs_minutes": [
+          20,
+          50,
+          60
+        ],
+        "served": {
+          "village-b": 3,
+          "village-c": 9
+        },
+        "travel_minutes": 130,
+        "service_minutes": 220,
+        "total_minutes": 350,
+        "available_minutes": 360,
+        "slack_minutes": 10
+      }
+    ],
+    "served": {
+      "village-a": 0,
+      "village-b": 3,
+      "village-c": 9
+    },
+    "unserved": {
+      "village-a": 12,
+      "village-b": 2,
+      "village-c": 0
+    },
+    "weighted_served": 15.2,
+    "travel_minutes": 130,
+    "vehicles_on": {
+      "2026-10-22": [
+        "motorbike-1"
+      ]
+    },
+    "idle_workers": {
+      "2026-10-22": []
+    }
+  }
+}

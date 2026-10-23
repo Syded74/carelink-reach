@@ -1,0 +1,7 @@
+{
+  "title": "Edit region",
+  "context": {
+    "person": false,
+    "place": false
+  }
+}

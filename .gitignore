@@ -1,0 +1,23 @@
+# Dependencies and local environments (recreate with npm / pip; see README)
+node_modules
+outreach-intelligence/.venv/
+__pycache__/
+.pytest_cache/
+
+# Raw recordings and cut intermediates (rebuild with demo-video/record-flow.js and build-flow.js)
+demo-video/clips/
+
+# Build output (npm run compile)
+app_settings.json
+
+# Local state, secrets and logs (never commit credentials)
+.local/
+.snapshots/
+.env*
+*.private.*
+!.env.example
+*.log
+
+# OS / editor files
+.DS_Store
+.Rhistory

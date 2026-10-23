@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-22T07:09:23.716Z",
+  "device": "23076RN8DY · Android 15",
+  "steps": [],
+  "passed": false,
+  "error": "Waiting for selector `#user` failed: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.",
+  "notes": [
+    "Offline = the app cannot reach the CHT server (USB port forward removed); not airplane mode.",
+    "Fixtures were written through the CHT API as the real users. The phone ends signed in as the volunteer (aiddrisu)."
+  ]
+}

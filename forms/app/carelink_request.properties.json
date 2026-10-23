@@ -1,0 +1,10 @@
+{
+  "title": "Request help",
+  "icon": "carelink-request",
+  "context": {
+    "person": false,
+    "place": true,
+    "expression": "(contact.contact_type === 'carelink_household' && (user.carelink_role === 'carelink_community' || user.carelink_role === 'carelink_cho')) && summary.open_requests === 0",
+    "permission": "can_carelink_request"
+  }
+}

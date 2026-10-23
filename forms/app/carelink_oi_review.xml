@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms"><h:head><h:title>Outreach plan decision</h:title><model odk:xforms-version="1.0.0"><instance><data id="carelink_oi_review" version="2026-10-22"><inputs><source>user</source><source_id/><contact><_id/><name/></contact><user><contact_id/><name/></user><proposal_id/><expected_event/><current_state/><step/><requested_by/><summary/></inputs><patient_id/><actor/><actor_contact tag="hidden"/><proposal_id tag="hidden"/><expected_event tag="hidden"/><state_seen/><step tag="hidden"/><decision/><action/><notes/><notice tag="hidden"/><meta tag="hidden"><instanceID/></meta></data></instance>
+<bind nodeset="/data/patient_id" type="string" required="true()" calculate="/data/inputs/contact/_id"/>
+<bind nodeset="/data/actor" type="string" required="true()" calculate="/data/inputs/user/name"/>
+<bind nodeset="/data/actor_contact" type="string" calculate="/data/inputs/user/contact_id"/>
+<bind nodeset="/data/notice" readonly="true()"/>
+<bind nodeset="/data/inputs/summary" readonly="true()"/>
+<bind nodeset="/data/proposal_id" type="string" required="true()" calculate="/data/inputs/proposal_id" constraint=". != ''" jr:constraintMsg="Open this form from your Outreach Intelligence task."/>
+<bind nodeset="/data/expected_event" type="string" required="true()" calculate="/data/inputs/expected_event"/>
+<bind nodeset="/data/state_seen" type="string" calculate="/data/inputs/current_state"/>
+<bind nodeset="/data/step" type="string" calculate="/data/inputs/step"/>
+<bind nodeset="/data/decision" type="string" relevant="/data/inputs/step = 'decide'" required="true()"/>
+<bind nodeset="/data/action" type="string" required="true()" calculate="if(/data/inputs/step = 'decide', /data/decision, /data/inputs/step)"/>
+<bind nodeset="/data/notes" type="string" required="/data/decision = 'reject'" jr:requiredMsg="Give the reason for rejecting." constraint="string-length(.) &lt;= 400"/>
+<bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/></model></h:head><h:body><input ref="/data/notice"><label>CareLink Reach. Saving does not confirm delivery: the plan status changes only when the server acknowledges it. Danger signs follow referral procedures and never wait for a plan.</label></input><input ref="/data/inputs/summary"><label>Plan: <output value="/data/inputs/summary"/></label></input><select1 ref="/data/decision"><label>Your decision</label><item><label>Approve this plan</label><value>approve</value></item><item><label>Reject this plan</label><value>reject</value></item></select1><input ref="/data/notes"><label>Notes</label><hint>Required when rejecting. Saved with the audit trail.</hint></input></h:body></h:html>

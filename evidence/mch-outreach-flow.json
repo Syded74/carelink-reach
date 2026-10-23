@@ -1,0 +1,158 @@
+{
+  "timestamp": "2026-10-22T21:50:28.306Z",
+  "steps": [
+    {
+      "step": "1–2. Generated mother (pregnancy recorded) and child (CWC appointment due today) registered in a new Dimabi household by the CHO",
+      "passed": true
+    },
+    {
+      "step": "3. The CHO recorded the ANC visit with a routine follow-up date (today) through the CHT form",
+      "passed": true
+    },
+    {
+      "step": "4–5. Four obligations projected with their CHT task ids (ANC follow-up, missing assessment, child first visit, appointment due) and counted once in the Dimabi export: +2 maternal, +2 child, +2 people, +2 encounters; operational demand unchanged",
+      "passed": true,
+      "detail": {
+        "task_ids": [
+          "mother-1792705828306:scheduledFollowUp:01a16598-535c-7ee4-b58d-2f0315ecdab4",
+          "mother-1792705828306:missingAssessment:01a16598-535c-7ee4-b58d-2f0315ecdab4",
+          "child-1792705828306:firstVisit:registration",
+          "child-1792705828306:appointmentDue:appt-1792705828306"
+        ]
+      }
+    },
+    {
+      "step": "6–7. Coordinator's plan for 2026-10-23 (Dimabi guaranteed; demand shows its maternal and child follow-ups) approved independently; the coordinator's own approval was refused; two simultaneous approvals were both refused as a conflict and no assignment existed before the accepted approval",
+      "passed": true,
+      "detail": {
+        "dimabi_sources": {
+          "open_requests": 0,
+          "open_maternal_followups": 2,
+          "open_child_followups": 2,
+          "unique_people": 2,
+          "unique_households": 1
+        },
+        "served_dimabi": 2
+      }
+    },
+    {
+      "step": "8. The approved Dimabi day plan links exactly the four obligations (stable ids); the mother and child are one encounter each",
+      "passed": true
+    },
+    {
+      "step": "9. The CHO has the \"ANC follow-up due\" task for the mother, and her profile shows the planned outreach day",
+      "passed": true
+    },
+    {
+      "step": "10–11. The CHO resolved the mother's ANC follow-up offline from her task; after an offline reload it synced, stamped with her username and the approved day",
+      "passed": true
+    },
+    {
+      "step": "12. Only the resolved obligation closed; the mother's missing-assessment task and the child's two stay open; the coordinator tab shows planned 4 · completed 1 · still open 3",
+      "passed": true,
+      "detail": {
+        "tab": "Dimabi · 2026-10-23 · Salamatu AbukariTest plan: not for real outreach.Planned 0 · completed 0 · unable 0 · partly 0 · still open 0Maternal and child follow-ups: planned 4 · completed 1 · closed by a later record 0 · partly 0 · still open 3Outreach day not recorded yet (or its record has not synchro"
+      }
+    },
+    {
+      "step": "13–14. Dimabi documented workload: maternal follow-ups −1, child unchanged, encounters unchanged (the mother still has an open obligation); the resolved follow-up appears in the weekly history",
+      "passed": true
+    },
+    {
+      "step": "15. A new planning run saw the updated inputs (Dimabi maternal follow-ups 2 → 1); the second plan approved; its Dimabi day plan holds 0 follow-up(s), none of this family's",
+      "passed": true
+    },
+    {
+      "step": "16. Replaying the resolution was refused (forbidden) and changed no counts; the Tolon volunteer cannot read the Dimabi mother or her link (403/403); recording the day as partly done closed nothing and released the open follow-ups",
+      "passed": true
+    }
+  ],
+  "closed_leftover_test_followups": 3,
+  "passed": true,
+  "snapshots": {
+    "0-before": {
+      "with_test_records": {
+        "encounters": 0,
+        "open_requests": 0,
+        "open_maternal_followups": 0,
+        "open_child_followups": 0,
+        "unique_people": 0,
+        "urgent_items_excluded": 0,
+        "followups_resolved_total": 41
+      },
+      "operational": {
+        "encounters": 0,
+        "open_requests": 0,
+        "open_maternal_followups": 0,
+        "open_child_followups": 0,
+        "unique_people": 0,
+        "urgent_items_excluded": 0,
+        "followups_resolved_total": 0
+      }
+    },
+    "1-recorded": {
+      "with_test_records": {
+        "encounters": 2,
+        "open_requests": 0,
+        "open_maternal_followups": 2,
+        "open_child_followups": 2,
+        "unique_people": 2,
+        "urgent_items_excluded": 0,
+        "followups_resolved_total": 41
+      },
+      "operational": {
+        "encounters": 0,
+        "open_requests": 0,
+        "open_maternal_followups": 0,
+        "open_child_followups": 0,
+        "unique_people": 0,
+        "urgent_items_excluded": 0,
+        "followups_resolved_total": 0
+      }
+    },
+    "2-resolved": {
+      "with_test_records": {
+        "encounters": 2,
+        "open_requests": 0,
+        "open_maternal_followups": 1,
+        "open_child_followups": 2,
+        "unique_people": 2,
+        "urgent_items_excluded": 0,
+        "followups_resolved_total": 42
+      },
+      "operational": {
+        "encounters": 0,
+        "open_requests": 0,
+        "open_maternal_followups": 0,
+        "open_child_followups": 0,
+        "unique_people": 0,
+        "urgent_items_excluded": 0,
+        "followups_resolved_total": 0
+      }
+    },
+    "3-replayed": {
+      "with_test_records": {
+        "encounters": 2,
+        "open_requests": 0,
+        "open_maternal_followups": 1,
+        "open_child_followups": 2,
+        "unique_people": 2,
+        "urgent_items_excluded": 0,
+        "followups_resolved_total": 42
+      },
+      "operational": {
+        "encounters": 0,
+        "open_requests": 0,
+        "open_maternal_followups": 0,
+        "open_child_followups": 0,
+        "unique_people": 0,
+        "urgent_items_excluded": 0,
+        "followups_resolved_total": 0
+      }
+    }
+  },
+  "limits": [
+    "Chrome DevTools network emulation, not a physical device.",
+    "People and household are generated and marked record_origin test."
+  ]
+}

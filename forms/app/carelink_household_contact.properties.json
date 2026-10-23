@@ -1,0 +1,10 @@
+{
+  "title": "Record household contact",
+  "icon": "carelink-followup",
+  "context": {
+    "person": false,
+    "place": true,
+    "permission": "can_carelink_request",
+    "expression": "contact.contact_type === 'carelink_household' && user.carelink_role === 'carelink_community' && summary.open_requests > 0"
+  }
+}

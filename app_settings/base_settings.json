@@ -1,0 +1,721 @@
+{
+  "languages": [
+    {
+      "locale": "en",
+      "enabled": true
+    }
+  ],
+  "locale": "en",
+  "locale_outgoing": "en",
+  "date_format": "D MMM, YYYY",
+  "reported_date_format": "DD-MMM-YYYY HH:mm:ss",
+  "forms_only_mode": false,
+  "place_hierarchy_types": [
+    "carelink_region",
+    "carelink_district",
+    "carelink_facility",
+    "carelink_community",
+    "carelink_household"
+  ],
+  "default_responses": {
+    "start_date": ""
+  },
+  "district_admins_access_unallocated_messages": false,
+  "public_access": false,
+  "default_country_code": 233,
+  "gateway_number": "",
+  "dhis_data_sets": [],
+  "schedule_morning_hours": 0,
+  "schedule_morning_minutes": 0,
+  "schedule_evening_hours": 23,
+  "schedule_evening_minutes": 0,
+  "synthetic_date": "",
+  "contact_display_short": "carelink_household.name",
+  "roles": {
+    "carelink_community": {
+      "name": "carelink_community.name",
+      "offline": true
+    },
+    "carelink_cho": {
+      "name": "carelink_cho.name",
+      "offline": true
+    },
+    "carelink_coordinator": {
+      "name": "carelink_coordinator.name",
+      "offline": true
+    },
+    "carelink_supervisor": {
+      "name": "carelink_supervisor.name",
+      "offline": true
+    },
+    "carelink_admin": {
+      "name": "carelink_admin.name"
+    },
+    "carelink_oi_service": {
+      "name": "carelink_oi_service.name"
+    }
+  },
+  "permissions": {
+    "can_access_gateway_api": [],
+    "can_bulk_delete_reports": [],
+    "can_configure": [
+      "carelink_admin"
+    ],
+    "can_create_people": [
+      "carelink_admin",
+      "carelink_cho"
+    ],
+    "can_create_places": [
+      "carelink_admin",
+      "carelink_community"
+    ],
+    "can_create_records": [
+      "carelink_community",
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ],
+    "can_create_users": [
+      "carelink_admin"
+    ],
+    "can_delete_contacts": [],
+    "can_delete_messages": [],
+    "can_delete_reports": [],
+    "can_delete_users": [
+      "carelink_admin"
+    ],
+    "can_edit": [
+      "carelink_admin",
+      "carelink_community",
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_oi_service",
+      "carelink_supervisor"
+    ],
+    "can_edit_profile": [],
+    "can_edit_verification": [],
+    "can_export_all": [
+      "carelink_admin"
+    ],
+    "can_export_contacts": [],
+    "can_export_feedback": [],
+    "can_export_messages": [],
+    "can_log_out_on_android": [],
+    "can_update_places": [
+      "carelink_admin"
+    ],
+    "can_update_reports": [],
+    "can_update_users": [
+      "carelink_admin"
+    ],
+    "can_export_dhis": [],
+    "can_verify_reports": [],
+    "can_view_analytics": [
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ],
+    "can_view_analytics_tab": [
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ],
+    "can_view_call_action": [],
+    "can_view_contacts": [
+      "carelink_community",
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ],
+    "can_view_contacts_tab": [
+      "carelink_community",
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ],
+    "can_view_last_visited_date": [],
+    "can_view_uhc_stats": [],
+    "can_view_message_action": [],
+    "can_view_messages": [],
+    "can_view_messages_tab": [],
+    "can_view_outgoing_messages": [],
+    "can_view_reports": [
+      "carelink_community",
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ],
+    "can_view_reports_tab": [
+      "carelink_community",
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ],
+    "can_view_tasks": [
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ],
+    "can_view_tasks_tab": [
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ],
+    "can_view_tasks_group": [],
+    "can_track_task_interactions": [],
+    "can_view_unallocated_data_records": [],
+    "can_view_users": [
+      "carelink_admin"
+    ],
+    "can_write_wealth_quintiles": [],
+    "can_aggregate_targets": [
+      "carelink_supervisor"
+    ],
+    "can_upgrade": [
+      "carelink_admin"
+    ],
+    "can_view_old_navigation": [],
+    "can_default_facility_filter": [],
+    "can_have_multiple_places": [
+      "carelink_cho"
+    ],
+    "can_skip_password_change": [
+      "carelink_community",
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ],
+    "can_get_task_notifications": [
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ],
+    "can_export_devices_details": [],
+    "can_carelink_request": [
+      "carelink_community",
+      "carelink_cho"
+    ],
+    "can_carelink_coordinate": [
+      "carelink_coordinator"
+    ],
+    "can_carelink_visit": [
+      "carelink_cho"
+    ],
+    "can_carelink_referral": [
+      "carelink_cho",
+      "carelink_coordinator"
+    ],
+    "can_carelink_mch": [
+      "carelink_cho",
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ],
+    "can_carelink_oi": [
+      "carelink_coordinator",
+      "carelink_supervisor"
+    ]
+  },
+  "uhc": {
+    "contacts_default_sort": "",
+    "visit_count": {
+      "month_start_date": 1,
+      "visit_count_goal": 0,
+      "use_bikram_sambat_months": false
+    }
+  },
+  "death_reporting": {
+    "mark_deceased_forms": [
+      "death_report"
+    ],
+    "date_field": "fields.death_details.date_of_death",
+    "undo_deceased_forms": [
+      "undo_death_report"
+    ]
+  },
+  "contact_types": [
+    {
+      "id": "carelink_region",
+      "name_key": "carelink_region.singular",
+      "group_key": "carelink_region.plural",
+      "create_key": "carelink_region.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "carelink-region",
+      "create_form": "form:contact:carelink_region:create",
+      "edit_form": "form:contact:carelink_region:edit"
+    },
+    {
+      "id": "carelink_district",
+      "name_key": "carelink_district.singular",
+      "group_key": "carelink_district.plural",
+      "create_key": "carelink_district.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "carelink-district",
+      "create_form": "form:contact:carelink_district:create",
+      "edit_form": "form:contact:carelink_district:edit",
+      "parents": [
+        "carelink_region"
+      ]
+    },
+    {
+      "id": "carelink_facility",
+      "name_key": "carelink_facility.singular",
+      "group_key": "carelink_facility.plural",
+      "create_key": "carelink_facility.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "carelink-facility",
+      "create_form": "form:contact:carelink_facility:create",
+      "edit_form": "form:contact:carelink_facility:edit",
+      "parents": [
+        "carelink_district"
+      ]
+    },
+    {
+      "id": "carelink_community",
+      "name_key": "carelink_community.singular",
+      "group_key": "carelink_community.plural",
+      "create_key": "carelink_community.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "carelink-community",
+      "create_form": "form:contact:carelink_community:create",
+      "edit_form": "form:contact:carelink_community:edit",
+      "parents": [
+        "carelink_facility"
+      ]
+    },
+    {
+      "id": "carelink_household",
+      "name_key": "carelink_household.singular",
+      "group_key": "carelink_household.plural",
+      "create_key": "carelink_household.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "carelink-household",
+      "create_form": "form:contact:carelink_household:create",
+      "edit_form": "form:contact:carelink_household:edit",
+      "parents": [
+        "carelink_community"
+      ]
+    },
+    {
+      "id": "carelink_individual",
+      "name_key": "carelink_individual.singular",
+      "group_key": "carelink_individual.plural",
+      "create_key": "carelink_individual.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "carelink-individual",
+      "create_form": "form:contact:carelink_individual:create",
+      "edit_form": "form:contact:carelink_individual:edit",
+      "parents": [
+        "carelink_facility",
+        "carelink_community",
+        "carelink_household"
+      ],
+      "person": true
+    }
+  ],
+  "create_user_for_contacts": {
+    "replace_forms": [
+      "replace_user"
+    ]
+  },
+  "transitions": {},
+  "replication_depth": [
+    {
+      "role": "carelink_community",
+      "depth": 2,
+      "report_depth": 1
+    },
+    {
+      "role": "carelink_cho",
+      "depth": 2,
+      "report_depth": 3
+    },
+    {
+      "role": "carelink_coordinator",
+      "depth": 3,
+      "report_depth": 3
+    },
+    {
+      "role": "carelink_supervisor",
+      "depth": 3,
+      "report_depth": 3
+    }
+  ],
+  "schedules": [],
+  "forms": {
+    "carelink_oi_demand": {
+      "meta": {
+        "code": "carelink_oi_demand",
+        "translation_key": "carelink.form.oi_demand",
+        "icon": "carelink-followup"
+      },
+      "fields": {
+        "as_of": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_demand.as_of"
+            },
+            "tiny": "as_of"
+          },
+          "position": 0,
+          "type": "string",
+          "required": false
+        },
+        "dataset_label": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_demand.dataset_label"
+            },
+            "tiny": "dataset_label"
+          },
+          "position": 1,
+          "type": "string",
+          "required": false
+        },
+        "model_version": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_demand.model_version"
+            },
+            "tiny": "model_version"
+          },
+          "position": 2,
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "carelink_oi_proposal": {
+      "meta": {
+        "code": "carelink_oi_proposal",
+        "translation_key": "carelink.form.oi_proposal",
+        "icon": "carelink-followup"
+      },
+      "fields": {
+        "planning_date": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_proposal.planning_date"
+            },
+            "tiny": "planning_date"
+          },
+          "position": 0,
+          "type": "string",
+          "required": false
+        },
+        "requested_by": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_proposal.requested_by"
+            },
+            "tiny": "requested_by"
+          },
+          "position": 1,
+          "type": "string",
+          "required": false
+        },
+        "planner_version": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_proposal.planner_version"
+            },
+            "tiny": "planner_version"
+          },
+          "position": 2,
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "carelink_oi_ack": {
+      "meta": {
+        "code": "carelink_oi_ack",
+        "translation_key": "carelink.form.oi_ack",
+        "icon": "carelink-followup"
+      },
+      "fields": {
+        "action": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_ack.action"
+            },
+            "tiny": "action"
+          },
+          "position": 0,
+          "type": "string",
+          "required": false
+        },
+        "actor": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_ack.actor"
+            },
+            "tiny": "actor"
+          },
+          "position": 1,
+          "type": "string",
+          "required": false
+        },
+        "result": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_ack.result"
+            },
+            "tiny": "result"
+          },
+          "position": 2,
+          "type": "string",
+          "required": false
+        },
+        "reason": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_ack.reason"
+            },
+            "tiny": "reason"
+          },
+          "position": 3,
+          "type": "string",
+          "required": false
+        },
+        "state_after": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_ack.state_after"
+            },
+            "tiny": "state_after"
+          },
+          "position": 4,
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "carelink_oi_assignment": {
+      "meta": {
+        "code": "carelink_oi_assignment",
+        "translation_key": "carelink.form.oi_assignment",
+        "icon": "carelink-outreach"
+      },
+      "fields": {
+        "date": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_assignment.date"
+            },
+            "tiny": "date"
+          },
+          "position": 0,
+          "type": "string",
+          "required": false
+        },
+        "worker_name": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_assignment.worker_name"
+            },
+            "tiny": "worker_name"
+          },
+          "position": 1,
+          "type": "string",
+          "required": false
+        },
+        "community_name": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_assignment.community_name"
+            },
+            "tiny": "community_name"
+          },
+          "position": 2,
+          "type": "string",
+          "required": false
+        },
+        "items_planned": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_assignment.items_planned"
+            },
+            "tiny": "items_planned"
+          },
+          "position": 3,
+          "type": "string",
+          "required": false
+        },
+        "route_text": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_assignment.route_text"
+            },
+            "tiny": "route_text"
+          },
+          "position": 4,
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "carelink_oi_day_plan": {
+      "meta": {
+        "code": "carelink_oi_day_plan",
+        "translation_key": "carelink.form.oi_day_plan",
+        "icon": "carelink-outreach"
+      },
+      "fields": {
+        "date": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_day_plan.date"
+            },
+            "tiny": "date"
+          },
+          "position": 0,
+          "type": "string",
+          "required": false
+        },
+        "worker_name": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_day_plan.worker_name"
+            },
+            "tiny": "worker_name"
+          },
+          "position": 1,
+          "type": "string",
+          "required": false
+        },
+        "community_name": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_day_plan.community_name"
+            },
+            "tiny": "community_name"
+          },
+          "position": 2,
+          "type": "string",
+          "required": false
+        },
+        "items_planned": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_day_plan.items_planned"
+            },
+            "tiny": "items_planned"
+          },
+          "position": 3,
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "carelink_oi_request_link": {
+      "meta": {
+        "code": "carelink_oi_request_link",
+        "translation_key": "carelink.form.oi_request_link",
+        "icon": "carelink-outreach"
+      },
+      "fields": {
+        "scheduled_date": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_request_link.scheduled_date"
+            },
+            "tiny": "scheduled_date"
+          },
+          "position": 0,
+          "type": "string",
+          "required": false
+        },
+        "status": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_request_link.status"
+            },
+            "tiny": "status"
+          },
+          "position": 1,
+          "type": "string",
+          "required": false
+        },
+        "assigned_username": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_request_link.assigned_username"
+            },
+            "tiny": "assigned_username"
+          },
+          "position": 2,
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "carelink_oi_followup_link": {
+      "meta": {
+        "code": "carelink_oi_followup_link",
+        "translation_key": "carelink.form.oi_followup_link",
+        "icon": "carelink-outreach"
+      },
+      "fields": {
+        "scheduled_date": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_followup_link.scheduled_date"
+            },
+            "tiny": "scheduled_date"
+          },
+          "position": 0,
+          "type": "string",
+          "required": false
+        },
+        "kind": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_followup_link.kind"
+            },
+            "tiny": "kind"
+          },
+          "position": 1,
+          "type": "string",
+          "required": false
+        },
+        "category": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_followup_link.category"
+            },
+            "tiny": "category"
+          },
+          "position": 2,
+          "type": "string",
+          "required": false
+        },
+        "assigned_username": {
+          "labels": {
+            "short": {
+              "translation_key": "report.carelink_oi_followup_link.assigned_username"
+            },
+            "tiny": "assigned_username"
+          },
+          "position": 3,
+          "type": "string",
+          "required": false
+        }
+      }
+    }
+  },
+  "task_schedules": [],
+  "header_tabs": {
+    "tasks": {
+      "resource_icon": null
+    },
+    "reports": {
+      "resource_icon": null
+    },
+    "contacts": {
+      "resource_icon": null
+    },
+    "analytics": {
+      "resource_icon": null
+    }
+  }
+}

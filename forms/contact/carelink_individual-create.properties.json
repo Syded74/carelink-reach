@@ -1,0 +1,7 @@
+{
+  "title": "Add individual",
+  "context": {
+    "person": false,
+    "place": false
+  }
+}

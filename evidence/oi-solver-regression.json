@@ -1,0 +1,503 @@
+{
+  "fictional_data_only": true,
+  "planner_version": "carelink-oi-planner 0.1.0",
+  "note": "Resource counterfactuals hold demand and fairness constant. They are not evidence of real-world or clinical improvement.",
+  "scenarios": {
+    "baseline": {
+      "planner_version": "carelink-oi-planner 0.1.0",
+      "solver": "OR-Tools CP-SAT",
+      "policy": {
+        "fairness_weight": 0.5,
+        "growth_weight": 0.3,
+        "travel_penalty_per_minute": 0.01,
+        "continuity_bonus": 0.5,
+        "previous_plan_communities": [],
+        "min_coverage": {
+          "enabled": false,
+          "communities": [],
+          "min_followups": 1
+        }
+      },
+      "priorities": {
+        "village-a": {
+          "weight": 1.25,
+          "underserved_index": 0.5,
+          "barrier": 1.0,
+          "coverage_gap": 0.0,
+          "growth": 0.0
+        },
+        "village-b": {
+          "weight": 1.0,
+          "underserved_index": 0.0,
+          "barrier": 0.0,
+          "coverage_gap": 0.0,
+          "growth": 0.0
+        },
+        "village-c": {
+          "weight": 1.355,
+          "underserved_index": 0.71,
+          "barrier": 1.0,
+          "coverage_gap": 0.42,
+          "growth": 0.0
+        }
+      },
+      "names": {
+        "village-a": "A (fictional)",
+        "village-b": "B (fictional)",
+        "village-c": "C (fictional)"
+      },
+      "pending": {
+        "village-a": 12,
+        "village-b": 5,
+        "village-c": 9
+      },
+      "days": [
+        "2026-10-22"
+      ],
+      "status": "OPTIMAL",
+      "objective": 17.05,
+      "trips": [
+        {
+          "worker": "nurse-1",
+          "worker_name": "Nurse 1 (fictional)",
+          "day": "2026-10-22",
+          "vehicle": "motorbike-1",
+          "route": [
+            "facility",
+            "village-a",
+            "village-b",
+            "facility"
+          ],
+          "legs_minutes": [
+            45,
+            30,
+            20
+          ],
+          "served": {
+            "village-a": 12,
+            "village-b": 3
+          },
+          "travel_minutes": 95,
+          "service_minutes": 265,
+          "total_minutes": 360,
+          "available_minutes": 360,
+          "slack_minutes": 0
+        }
+      ],
+      "served": {
+        "village-a": 12,
+        "village-b": 3,
+        "village-c": 0
+      },
+      "unserved": {
+        "village-a": 0,
+        "village-b": 2,
+        "village-c": 9
+      },
+      "weighted_served": 18.0,
+      "travel_minutes": 95,
+      "vehicles_on": {
+        "2026-10-22": [
+          "motorbike-1"
+        ]
+      },
+      "idle_workers": {
+        "2026-10-22": []
+      }
+    },
+    "longer-day": {
+      "planner_version": "carelink-oi-planner 0.1.0",
+      "solver": "OR-Tools CP-SAT",
+      "policy": {
+        "fairness_weight": 0.5,
+        "growth_weight": 0.3,
+        "travel_penalty_per_minute": 0.01,
+        "continuity_bonus": 0.5,
+        "previous_plan_communities": [],
+        "min_coverage": {
+          "enabled": false,
+          "communities": [],
+          "min_followups": 1
+        }
+      },
+      "priorities": {
+        "village-a": {
+          "weight": 1.25,
+          "underserved_index": 0.5,
+          "barrier": 1.0,
+          "coverage_gap": 0.0,
+          "growth": 0.0
+        },
+        "village-b": {
+          "weight": 1.0,
+          "underserved_index": 0.0,
+          "barrier": 0.0,
+          "coverage_gap": 0.0,
+          "growth": 0.0
+        },
+        "village-c": {
+          "weight": 1.355,
+          "underserved_index": 0.71,
+          "barrier": 1.0,
+          "coverage_gap": 0.42,
+          "growth": 0.0
+        }
+      },
+      "names": {
+        "village-a": "A (fictional)",
+        "village-b": "B (fictional)",
+        "village-c": "C (fictional)"
+      },
+      "pending": {
+        "village-a": 12,
+        "village-b": 5,
+        "village-c": 9
+      },
+      "days": [
+        "2026-10-22"
+      ],
+      "status": "OPTIMAL",
+      "objective": 23.245,
+      "trips": [
+        {
+          "worker": "nurse-1",
+          "worker_name": "Nurse 1 (fictional)",
+          "day": "2026-10-22",
+          "vehicle": "motorbike-1",
+          "route": [
+            "facility",
+            "village-a",
+            "village-c",
+            "facility"
+          ],
+          "legs_minutes": [
+            45,
+            40,
+            60
+          ],
+          "served": {
+            "village-a": 10,
+            "village-c": 9
+          },
+          "travel_minutes": 145,
+          "service_minutes": 325,
+          "total_minutes": 470,
+          "available_minutes": 480,
+          "slack_minutes": 10
+        }
+      ],
+      "served": {
+        "village-a": 10,
+        "village-b": 0,
+        "village-c": 9
+      },
+      "unserved": {
+        "village-a": 2,
+        "village-b": 5,
+        "village-c": 0
+      },
+      "weighted_served": 24.7,
+      "travel_minutes": 145,
+      "vehicles_on": {
+        "2026-10-22": [
+          "motorbike-1"
+        ]
+      },
+      "idle_workers": {
+        "2026-10-22": []
+      }
+    },
+    "second-nurse-no-vehicle": {
+      "planner_version": "carelink-oi-planner 0.1.0",
+      "solver": "OR-Tools CP-SAT",
+      "policy": {
+        "fairness_weight": 0.5,
+        "growth_weight": 0.3,
+        "travel_penalty_per_minute": 0.01,
+        "continuity_bonus": 0.5,
+        "previous_plan_communities": [],
+        "min_coverage": {
+          "enabled": false,
+          "communities": [],
+          "min_followups": 1
+        }
+      },
+      "priorities": {
+        "village-a": {
+          "weight": 1.25,
+          "underserved_index": 0.5,
+          "barrier": 1.0,
+          "coverage_gap": 0.0,
+          "growth": 0.0
+        },
+        "village-b": {
+          "weight": 1.0,
+          "underserved_index": 0.0,
+          "barrier": 0.0,
+          "coverage_gap": 0.0,
+          "growth": 0.0
+        },
+        "village-c": {
+          "weight": 1.355,
+          "underserved_index": 0.71,
+          "barrier": 1.0,
+          "coverage_gap": 0.42,
+          "growth": 0.0
+        }
+      },
+      "names": {
+        "village-a": "A (fictional)",
+        "village-b": "B (fictional)",
+        "village-c": "C (fictional)"
+      },
+      "pending": {
+        "village-a": 12,
+        "village-b": 5,
+        "village-c": 9
+      },
+      "days": [
+        "2026-10-22"
+      ],
+      "status": "OPTIMAL",
+      "objective": 17.05,
+      "trips": [
+        {
+          "worker": "nurse-1",
+          "worker_name": "Nurse 1 (fictional)",
+          "day": "2026-10-22",
+          "vehicle": "motorbike-1",
+          "route": [
+            "facility",
+            "village-a",
+            "village-b",
+            "facility"
+          ],
+          "legs_minutes": [
+            45,
+            30,
+            20
+          ],
+          "served": {
+            "village-a": 12,
+            "village-b": 3
+          },
+          "travel_minutes": 95,
+          "service_minutes": 265,
+          "total_minutes": 360,
+          "available_minutes": 360,
+          "slack_minutes": 0
+        }
+      ],
+      "served": {
+        "village-a": 12,
+        "village-b": 3,
+        "village-c": 0
+      },
+      "unserved": {
+        "village-a": 0,
+        "village-b": 2,
+        "village-c": 9
+      },
+      "weighted_served": 18.0,
+      "travel_minutes": 95,
+      "vehicles_on": {
+        "2026-10-22": [
+          "motorbike-1"
+        ]
+      },
+      "idle_workers": {
+        "2026-10-22": [
+          "nurse-2"
+        ]
+      }
+    },
+    "second-nurse-second-vehicle": {
+      "planner_version": "carelink-oi-planner 0.1.0",
+      "solver": "OR-Tools CP-SAT",
+      "policy": {
+        "fairness_weight": 0.5,
+        "growth_weight": 0.3,
+        "travel_penalty_per_minute": 0.01,
+        "continuity_bonus": 0.5,
+        "previous_plan_communities": [],
+        "min_coverage": {
+          "enabled": false,
+          "communities": [],
+          "min_followups": 1
+        }
+      },
+      "priorities": {
+        "village-a": {
+          "weight": 1.25,
+          "underserved_index": 0.5,
+          "barrier": 1.0,
+          "coverage_gap": 0.0,
+          "growth": 0.0
+        },
+        "village-b": {
+          "weight": 1.0,
+          "underserved_index": 0.0,
+          "barrier": 0.0,
+          "coverage_gap": 0.0,
+          "growth": 0.0
+        },
+        "village-c": {
+          "weight": 1.355,
+          "underserved_index": 0.71,
+          "barrier": 1.0,
+          "coverage_gap": 0.42,
+          "growth": 0.0
+        }
+      },
+      "names": {
+        "village-a": "A (fictional)",
+        "village-b": "B (fictional)",
+        "village-c": "C (fictional)"
+      },
+      "pending": {
+        "village-a": 12,
+        "village-b": 5,
+        "village-c": 9
+      },
+      "days": [
+        "2026-10-22"
+      ],
+      "status": "OPTIMAL",
+      "objective": 29.945,
+      "trips": [
+        {
+          "worker": "nurse-1",
+          "worker_name": "Nurse 1 (fictional)",
+          "day": "2026-10-22",
+          "vehicle": "motorbike-1",
+          "route": [
+            "facility",
+            "village-a",
+            "village-b",
+            "facility"
+          ],
+          "legs_minutes": [
+            45,
+            30,
+            20
+          ],
+          "served": {
+            "village-a": 12,
+            "village-b": 3
+          },
+          "travel_minutes": 95,
+          "service_minutes": 265,
+          "total_minutes": 360,
+          "available_minutes": 360,
+          "slack_minutes": 0
+        },
+        {
+          "worker": "nurse-2",
+          "worker_name": "Nurse 2 (fictional)",
+          "day": "2026-10-22",
+          "vehicle": "pickup-1",
+          "route": [
+            "facility",
+            "village-b",
+            "village-c",
+            "facility"
+          ],
+          "legs_minutes": [
+            20,
+            50,
+            60
+          ],
+          "served": {
+            "village-b": 2,
+            "village-c": 9
+          },
+          "travel_minutes": 130,
+          "service_minutes": 205,
+          "total_minutes": 335,
+          "available_minutes": 360,
+          "slack_minutes": 25
+        }
+      ],
+      "served": {
+        "village-a": 12,
+        "village-b": 5,
+        "village-c": 9
+      },
+      "unserved": {
+        "village-a": 0,
+        "village-b": 0,
+        "village-c": 0
+      },
+      "weighted_served": 32.2,
+      "travel_minutes": 225,
+      "vehicles_on": {
+        "2026-10-22": [
+          "motorbike-1",
+          "pickup-1"
+        ]
+      },
+      "idle_workers": {
+        "2026-10-22": []
+      }
+    },
+    "infeasible-confirmed": {
+      "planner_version": "carelink-oi-planner 0.1.0",
+      "solver": "OR-Tools CP-SAT",
+      "policy": {
+        "fairness_weight": 0.5,
+        "growth_weight": 0.3,
+        "travel_penalty_per_minute": 0.01,
+        "continuity_bonus": 0.5,
+        "previous_plan_communities": [],
+        "min_coverage": {
+          "enabled": false,
+          "communities": [],
+          "min_followups": 1
+        }
+      },
+      "priorities": {
+        "village-a": {
+          "weight": 1.25,
+          "underserved_index": 0.5,
+          "barrier": 1.0,
+          "coverage_gap": 0.0,
+          "growth": 0.0
+        },
+        "village-b": {
+          "weight": 1.0,
+          "underserved_index": 0.0,
+          "barrier": 0.0,
+          "coverage_gap": 0.0,
+          "growth": 0.0
+        },
+        "village-c": {
+          "weight": 1.355,
+          "underserved_index": 0.71,
+          "barrier": 1.0,
+          "coverage_gap": 0.42,
+          "growth": 0.0
+        }
+      },
+      "names": {
+        "village-a": "A (fictional)",
+        "village-b": "B (fictional)",
+        "village-c": "C (fictional)"
+      },
+      "pending": {
+        "village-a": 12,
+        "village-b": 5,
+        "village-c": 9
+      },
+      "days": [
+        "2026-10-22"
+      ],
+      "status": "INFEASIBLE",
+      "reasons": [
+        "Confirmed assignment for C (fictional) needs at least 275 minutes (round trip 120 + setup 20 + 9 x 15), but Nurse 1 (fictional) has 180 minutes."
+      ],
+      "trips": [],
+      "served": {},
+      "unserved": {}
+    }
+  }
+}

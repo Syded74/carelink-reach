@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-21T20:10:14.716Z",
+  "health": {
+    "ready": true,
+    "handler": "medic-api",
+    "version": "0.1.0",
+    "detail": "All required services are running normally"
+  },
+  "counts": {
+    "communities": 3,
+    "households": 10,
+    "requests_delivered_to_this_server": 9,
+    "awaiting_review": 3,
+    "requests_ever_assigned": 6,
+    "active_assignments": 2,
+    "completed_visits": 4,
+    "unresolved_requests": 5,
+    "reported_transport_barriers": 2,
+    "conflicts": 0
+  },
+  "note": "Server snapshot, fictional records. Device targets are scoped and may include pending local records. No clinical outcomes inferred."
+}

@@ -1,0 +1,785 @@
+{
+  "note": "Tolon District set-up. Place names come from published Tolon District health infrastructure documentation; community-to-facility groupings are provisional until confirmed by the district health authorities. People are fictional: one account per role, at Tolon District Hospital, for app walk-throughs. Travel minutes are unverified estimates: replace them with facility-measured values before relying on a plan.",
+  "region": {
+    "id": "carelink-region-northern",
+    "name": "Northern Region"
+  },
+  "district": {
+    "id": "carelink-district-tolon",
+    "name": "Tolon District"
+  },
+  "admin": {
+    "username": "kboateng",
+    "name": "Kwame Boateng",
+    "role": "carelink_admin"
+  },
+  "horizon_working_days": 5,
+  "working_days": [
+    "mon",
+    "tue",
+    "wed",
+    "thu",
+    "fri"
+  ],
+  "working_hours": {
+    "start": "08:00",
+    "end": "16:00"
+  },
+  "service_minutes_per_household": 35,
+  "max_households_per_worker_per_day": 6,
+  "facilities": [
+    {
+      "id": "carelink-facility-tolon-hospital",
+      "name": "Tolon District Hospital",
+      "communities": [
+        {
+          "id": "carelink-community-tolon",
+          "name": "Tolon"
+        },
+        {
+          "id": "carelink-community-gburimani",
+          "name": "Gburimani"
+        },
+        {
+          "id": "carelink-community-dimabi",
+          "name": "Dimabi"
+        }
+      ],
+      "people": [
+        {
+          "username": "rseidu",
+          "id": "carelink-person-rseidu",
+          "name": "Rahinatu Seidu",
+          "role": "carelink_coordinator"
+        },
+        {
+          "username": "mtahiru",
+          "id": "carelink-person-mtahiru",
+          "name": "Mohammed Tahiru",
+          "role": "carelink_supervisor"
+        },
+        {
+          "username": "sabukari",
+          "id": "carelink-person-sabukari",
+          "name": "Salamatu Abukari",
+          "role": "carelink_cho",
+          "communities": [
+            "carelink-community-tolon",
+            "carelink-community-gburimani",
+            "carelink-community-dimabi"
+          ]
+        },
+        {
+          "username": "aiddrisu",
+          "id": "carelink-person-aiddrisu",
+          "name": "Abdul-Rahman Iddrisu",
+          "role": "carelink_community",
+          "communities": [
+            "carelink-community-tolon"
+          ]
+        }
+      ],
+      "staff": [
+        {
+          "id": "carelink-person-sabukari",
+          "name": "Salamatu Abukari",
+          "role": "CHO",
+          "available": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ],
+          "qualifications": [
+            "request",
+            "anc",
+            "pnc",
+            "cwc"
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "id": "carelink-facility-tolon-hospital-motorbike-1",
+          "name": "Hospital outreach motorbike 1",
+          "available": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ]
+        },
+        {
+          "id": "carelink-facility-tolon-hospital-motorbike-2",
+          "name": "Hospital outreach motorbike 2",
+          "available": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ]
+        }
+      ],
+      "travel_minutes": {
+        "dry": {
+          "carelink-facility-tolon-hospital": {
+            "carelink-community-tolon": 5,
+            "carelink-community-gburimani": 20,
+            "carelink-community-dimabi": 25
+          },
+          "carelink-community-tolon": {
+            "carelink-community-gburimani": 20,
+            "carelink-community-dimabi": 25
+          },
+          "carelink-community-gburimani": {
+            "carelink-community-dimabi": 30
+          }
+        },
+        "rainy": {
+          "carelink-facility-tolon-hospital": {
+            "carelink-community-tolon": 8,
+            "carelink-community-gburimani": 32,
+            "carelink-community-dimabi": 40
+          },
+          "carelink-community-tolon": {
+            "carelink-community-gburimani": 32,
+            "carelink-community-dimabi": 40
+          },
+          "carelink-community-gburimani": {
+            "carelink-community-dimabi": 48
+          }
+        }
+      },
+      "resources": [
+        {
+          "id": "growth-measurement-set",
+          "name": "Child weighing scale and length/height board (outreach set)",
+          "category": "equipment",
+          "unit": "set",
+          "quantity": 1,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "bp-monitor",
+          "name": "Blood pressure monitor",
+          "category": "equipment",
+          "unit": "device",
+          "quantity": 1,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "anc-outreach-supplies",
+          "name": "ANC outreach supplies",
+          "category": "supply",
+          "unit": "pack",
+          "quantity": 8,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "pnc-outreach-supplies",
+          "name": "PNC outreach supplies",
+          "category": "supply",
+          "unit": "pack",
+          "quantity": 6,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "cwc-outreach-supplies",
+          "name": "Child welfare outreach supplies",
+          "category": "supply",
+          "unit": "pack",
+          "quantity": 10,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "motorbike-fuel",
+          "name": "Motorbike fuel",
+          "category": "fuel",
+          "unit": "litres",
+          "quantity": 6,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "vaccine-stock-penta",
+          "name": "Pentavalent vaccine stock (entered by authorised staff)",
+          "category": "vaccine",
+          "unit": "dose",
+          "quantity": 0,
+          "status": "unknown",
+          "verified_at": null,
+          "verified_by": ""
+        }
+      ],
+      "outreach_calendar": {
+        "source": "Weekly activity plan observed at Kalpohini CHPS during the team's learning visit (22 October 2026): Monday and Thursday static services, Tuesday community outreach, Wednesday defaulter tracing and home visits, Friday school health services. Used here as the demonstration facility's schedule; not a national Ghana Health Service rule and not confirmed by Tolon District Hospital.",
+        "verification_status": "unverified",
+        "enforced": false,
+        "days": {
+          "mon": "static services",
+          "tue": "outreach",
+          "wed": "defaulter tracing and home visits",
+          "thu": "static services",
+          "fri": "school health services"
+        }
+      },
+      "directory": {
+        "facility_type": "district_hospital",
+        "facility_type_source": "read from the published facility name only",
+        "services_supported": [],
+        "services_verification": "not recorded: no capability is assumed from the facility type",
+        "referral_relationships": [],
+        "referral_contacts": null,
+        "verification_status": "unverified",
+        "last_verified": null,
+        "note": "Community groupings and referral relationships are provisional until confirmed by the district health authorities."
+      }
+    },
+    {
+      "id": "carelink-facility-nyankpala",
+      "name": "Nyankpala Health Centre",
+      "communities": [
+        {
+          "id": "carelink-community-nyankpala",
+          "name": "Nyankpala"
+        },
+        {
+          "id": "carelink-community-gbulahegu",
+          "name": "Gbulahegu"
+        },
+        {
+          "id": "carelink-community-tingoli",
+          "name": "Tingoli"
+        },
+        {
+          "id": "carelink-community-tunayili",
+          "name": "Tunayili"
+        }
+      ],
+      "people": [],
+      "staff": [],
+      "vehicles": [
+        {
+          "id": "carelink-facility-nyankpala-motorbike-1",
+          "name": "Health centre motorbike",
+          "available": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ]
+        }
+      ],
+      "travel_minutes": {
+        "dry": {
+          "carelink-facility-nyankpala": {
+            "carelink-community-nyankpala": 5,
+            "carelink-community-gbulahegu": 15,
+            "carelink-community-tingoli": 20,
+            "carelink-community-tunayili": 25
+          },
+          "carelink-community-nyankpala": {
+            "carelink-community-gbulahegu": 15,
+            "carelink-community-tingoli": 20,
+            "carelink-community-tunayili": 25
+          },
+          "carelink-community-gbulahegu": {
+            "carelink-community-tingoli": 20,
+            "carelink-community-tunayili": 25
+          },
+          "carelink-community-tingoli": {
+            "carelink-community-tunayili": 20
+          }
+        },
+        "rainy": {
+          "carelink-facility-nyankpala": {
+            "carelink-community-nyankpala": 8,
+            "carelink-community-gbulahegu": 24,
+            "carelink-community-tingoli": 32,
+            "carelink-community-tunayili": 40
+          },
+          "carelink-community-nyankpala": {
+            "carelink-community-gbulahegu": 24,
+            "carelink-community-tingoli": 32,
+            "carelink-community-tunayili": 40
+          },
+          "carelink-community-gbulahegu": {
+            "carelink-community-tingoli": 32,
+            "carelink-community-tunayili": 40
+          },
+          "carelink-community-tingoli": {
+            "carelink-community-tunayili": 32
+          }
+        }
+      },
+      "resources": [
+        {
+          "id": "growth-measurement-set",
+          "name": "Child weighing scale and length/height board (outreach set)",
+          "category": "equipment",
+          "unit": "set",
+          "quantity": 1,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "bp-monitor",
+          "name": "Blood pressure monitor",
+          "category": "equipment",
+          "unit": "device",
+          "quantity": 1,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "anc-outreach-supplies",
+          "name": "ANC outreach supplies",
+          "category": "supply",
+          "unit": "pack",
+          "quantity": 4,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "pnc-outreach-supplies",
+          "name": "PNC outreach supplies",
+          "category": "supply",
+          "unit": "pack",
+          "quantity": 3,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "cwc-outreach-supplies",
+          "name": "Child welfare outreach supplies",
+          "category": "supply",
+          "unit": "pack",
+          "quantity": 5,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "motorbike-fuel",
+          "name": "Motorbike fuel",
+          "category": "fuel",
+          "unit": "litres",
+          "quantity": 4,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "vaccine-stock-penta",
+          "name": "Pentavalent vaccine stock (entered by authorised staff)",
+          "category": "vaccine",
+          "unit": "dose",
+          "quantity": 0,
+          "status": "unknown",
+          "verified_at": null,
+          "verified_by": ""
+        }
+      ],
+      "outreach_calendar": {
+        "source": "Illustrative: modelled on the Kalpohini CHPS weekly CWC activity plan photographed on 22 October 2026. Not this facility's confirmed calendar.",
+        "verification_status": "unverified",
+        "enforced": false,
+        "days": {
+          "mon": "static clinic",
+          "tue": "outreach",
+          "wed": "defaulter tracing and home visits",
+          "thu": "static clinic"
+        }
+      },
+      "directory": {
+        "facility_type": "health_centre",
+        "facility_type_source": "read from the published facility name only",
+        "services_supported": [],
+        "services_verification": "not recorded: no capability is assumed from the facility type",
+        "referral_relationships": [],
+        "referral_contacts": null,
+        "verification_status": "unverified",
+        "last_verified": null,
+        "note": "Community groupings and referral relationships are provisional until confirmed by the district health authorities."
+      }
+    },
+    {
+      "id": "carelink-facility-wantugu",
+      "name": "Wantugu Health Centre",
+      "communities": [
+        {
+          "id": "carelink-community-wantugu",
+          "name": "Wantugu"
+        },
+        {
+          "id": "carelink-community-lingbun-gudaa",
+          "name": "Lingbun Gudaa"
+        }
+      ],
+      "people": [],
+      "staff": [],
+      "vehicles": [
+        {
+          "id": "carelink-facility-wantugu-motorbike-1",
+          "name": "Health centre motorbike",
+          "available": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ]
+        }
+      ],
+      "travel_minutes": {
+        "dry": {
+          "carelink-facility-wantugu": {
+            "carelink-community-wantugu": 5,
+            "carelink-community-lingbun-gudaa": 25
+          },
+          "carelink-community-wantugu": {
+            "carelink-community-lingbun-gudaa": 25
+          }
+        },
+        "rainy": {
+          "carelink-facility-wantugu": {
+            "carelink-community-wantugu": 8,
+            "carelink-community-lingbun-gudaa": 40
+          },
+          "carelink-community-wantugu": {
+            "carelink-community-lingbun-gudaa": 40
+          }
+        }
+      },
+      "resources": [
+        {
+          "id": "growth-measurement-set",
+          "name": "Child weighing scale and length/height board (outreach set)",
+          "category": "equipment",
+          "unit": "set",
+          "quantity": 1,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "bp-monitor",
+          "name": "Blood pressure monitor",
+          "category": "equipment",
+          "unit": "device",
+          "quantity": 1,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "anc-outreach-supplies",
+          "name": "ANC outreach supplies",
+          "category": "supply",
+          "unit": "pack",
+          "quantity": 4,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "pnc-outreach-supplies",
+          "name": "PNC outreach supplies",
+          "category": "supply",
+          "unit": "pack",
+          "quantity": 3,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "cwc-outreach-supplies",
+          "name": "Child welfare outreach supplies",
+          "category": "supply",
+          "unit": "pack",
+          "quantity": 5,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "motorbike-fuel",
+          "name": "Motorbike fuel",
+          "category": "fuel",
+          "unit": "litres",
+          "quantity": 4,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "vaccine-stock-penta",
+          "name": "Pentavalent vaccine stock (entered by authorised staff)",
+          "category": "vaccine",
+          "unit": "dose",
+          "quantity": 0,
+          "status": "unknown",
+          "verified_at": null,
+          "verified_by": ""
+        }
+      ],
+      "outreach_calendar": {
+        "source": "Illustrative: modelled on the Kalpohini CHPS weekly CWC activity plan photographed on 22 October 2026. Not this facility's confirmed calendar.",
+        "verification_status": "unverified",
+        "enforced": false,
+        "days": {
+          "mon": "static clinic",
+          "tue": "outreach",
+          "wed": "defaulter tracing and home visits",
+          "thu": "static clinic"
+        }
+      },
+      "directory": {
+        "facility_type": "health_centre",
+        "facility_type_source": "read from the published facility name only",
+        "services_supported": [],
+        "services_verification": "not recorded: no capability is assumed from the facility type",
+        "referral_relationships": [],
+        "referral_contacts": null,
+        "verification_status": "unverified",
+        "last_verified": null,
+        "note": "Community groupings and referral relationships are provisional until confirmed by the district health authorities."
+      }
+    },
+    {
+      "id": "carelink-facility-kpendua",
+      "name": "Kpendua CHPS",
+      "communities": [
+        {
+          "id": "carelink-community-kpendua",
+          "name": "Kpendua"
+        },
+        {
+          "id": "carelink-community-chirifoyili",
+          "name": "Chirifoyili"
+        },
+        {
+          "id": "carelink-community-tali",
+          "name": "Tali"
+        }
+      ],
+      "people": [],
+      "staff": [],
+      "vehicles": [
+        {
+          "id": "carelink-facility-kpendua-motorbike-1",
+          "name": "CHPS motorbike",
+          "available": [
+            "mon",
+            "tue",
+            "wed",
+            "thu",
+            "fri"
+          ]
+        }
+      ],
+      "travel_minutes": {
+        "dry": {
+          "carelink-facility-kpendua": {
+            "carelink-community-kpendua": 5,
+            "carelink-community-chirifoyili": 20,
+            "carelink-community-tali": 35
+          },
+          "carelink-community-kpendua": {
+            "carelink-community-chirifoyili": 20,
+            "carelink-community-tali": 35
+          },
+          "carelink-community-chirifoyili": {
+            "carelink-community-tali": 25
+          }
+        },
+        "rainy": {
+          "carelink-facility-kpendua": {
+            "carelink-community-kpendua": 8,
+            "carelink-community-chirifoyili": 32,
+            "carelink-community-tali": 56
+          },
+          "carelink-community-kpendua": {
+            "carelink-community-chirifoyili": 32,
+            "carelink-community-tali": 56
+          },
+          "carelink-community-chirifoyili": {
+            "carelink-community-tali": 40
+          }
+        }
+      },
+      "resources": [
+        {
+          "id": "growth-measurement-set",
+          "name": "Child weighing scale and length/height board (outreach set)",
+          "category": "equipment",
+          "unit": "set",
+          "quantity": 1,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "bp-monitor",
+          "name": "Blood pressure monitor",
+          "category": "equipment",
+          "unit": "device",
+          "quantity": 1,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "anc-outreach-supplies",
+          "name": "ANC outreach supplies",
+          "category": "supply",
+          "unit": "pack",
+          "quantity": 4,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "pnc-outreach-supplies",
+          "name": "PNC outreach supplies",
+          "category": "supply",
+          "unit": "pack",
+          "quantity": 3,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "cwc-outreach-supplies",
+          "name": "Child welfare outreach supplies",
+          "category": "supply",
+          "unit": "pack",
+          "quantity": 5,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "motorbike-fuel",
+          "name": "Motorbike fuel",
+          "category": "fuel",
+          "unit": "litres",
+          "quantity": 4,
+          "status": "simulated",
+          "verified_at": null,
+          "verified_by": "simulated proof-of-concept value"
+        },
+        {
+          "id": "vaccine-stock-penta",
+          "name": "Pentavalent vaccine stock (entered by authorised staff)",
+          "category": "vaccine",
+          "unit": "dose",
+          "quantity": 0,
+          "status": "unknown",
+          "verified_at": null,
+          "verified_by": ""
+        }
+      ],
+      "outreach_calendar": {
+        "source": "Illustrative: modelled on the Kalpohini CHPS weekly CWC activity plan photographed on 22 October 2026. Not this facility's confirmed calendar.",
+        "verification_status": "unverified",
+        "enforced": false,
+        "days": {
+          "mon": "static clinic",
+          "tue": "outreach",
+          "wed": "defaulter tracing and home visits",
+          "thu": "static clinic"
+        }
+      },
+      "directory": {
+        "facility_type": "chps",
+        "facility_type_source": "read from the published facility name only",
+        "services_supported": [],
+        "services_verification": "not recorded: no capability is assumed from the facility type",
+        "referral_relationships": [],
+        "referral_contacts": null,
+        "verification_status": "unverified",
+        "last_verified": null,
+        "note": "Community groupings and referral relationships are provisional until confirmed by the district health authorities."
+      }
+    }
+  ],
+  "service_minutes_by_visit_type": {
+    "note": "Operational planning assumptions for time on site, pending programme review; not clinical requirements.",
+    "request": 20,
+    "anc": 30,
+    "pnc": 30,
+    "cwc": 25
+  },
+  "fairness_rules": {
+    "note": "Programme settings for ranking underserved communities, pending programme review; not clinical risk.",
+    "underserved_components": {
+      "barrier": 0.3,
+      "reporting_gap": 0.3,
+      "outreach_gap": 0.2,
+      "unserved_planned": 0.2
+    },
+    "outreach_grace_days": 14,
+    "outreach_full_gap_days": 60,
+    "unserved_planned_cap": 5
+  },
+  "service_requirements": {
+    "note": "Illustrative planning requirements per visit type, pending programme and clinical review. They decide which supplies and equipment a planned visit uses; they are not clinical protocols. Vaccine stock is deliberately not tied to any visit type: that requires reviewed clinical configuration.",
+    "request": {
+      "consumables": {},
+      "equipment": []
+    },
+    "anc": {
+      "consumables": {
+        "anc-outreach-supplies": 1
+      },
+      "equipment": [
+        "bp-monitor"
+      ]
+    },
+    "pnc": {
+      "consumables": {
+        "pnc-outreach-supplies": 1
+      },
+      "equipment": [
+        "bp-monitor"
+      ]
+    },
+    "cwc": {
+      "consumables": {
+        "cwc-outreach-supplies": 1
+      },
+      "equipment": [
+        "growth-measurement-set"
+      ]
+    }
+  },
+  "fuel_policy": {
+    "resource": "motorbike-fuel",
+    "litres_per_travel_minute": 0.03,
+    "note": "Planning assumption (about 1.8 litres per hour of riding), not a measured consumption."
+  },
+  "resource_policy": {
+    "stale_after_days": 7,
+    "note": "A confirmed quantity older than this is stale and is not planned with until confirmed again."
+  }
+}

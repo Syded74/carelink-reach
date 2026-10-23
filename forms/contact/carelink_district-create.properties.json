@@ -1,0 +1,7 @@
+{
+  "title": "Add district",
+  "context": {
+    "person": false,
+    "place": false
+  }
+}

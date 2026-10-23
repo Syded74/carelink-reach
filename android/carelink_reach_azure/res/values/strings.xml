@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">CareLink Reach</string>
+	<!-- CareLink Reach demonstration server on Azure (HTTPS, Let's Encrypt certificate). -->
+	<string name="app_host">carelink-reach-gh.southafricanorth.cloudapp.azure.com</string>
+	<string name="scheme">https</string>
+</resources>

@@ -1,0 +1,404 @@
+{
+  "extension_type": "header_tab",
+  "title": "carelink.oi.tab",
+  "icon": "fa-map-signs",
+  "weight": 5,
+  "roles": [
+    "carelink_coordinator",
+    "carelink_supervisor"
+  ],
+  "config": {
+    "stale_after_days": 7,
+    "facilities": {
+      "carelink-facility-tolon-hospital": {
+        "name": "Tolon District Hospital",
+        "staff": [
+          {
+            "id": "carelink-person-sabukari",
+            "name": "Salamatu Abukari",
+            "role": "CHO",
+            "available": [
+              "mon",
+              "tue",
+              "wed",
+              "thu",
+              "fri"
+            ]
+          }
+        ],
+        "vehicles": [
+          {
+            "id": "carelink-facility-tolon-hospital-motorbike-1",
+            "name": "Hospital outreach motorbike 1",
+            "available": [
+              "mon",
+              "tue",
+              "wed",
+              "thu",
+              "fri"
+            ]
+          },
+          {
+            "id": "carelink-facility-tolon-hospital-motorbike-2",
+            "name": "Hospital outreach motorbike 2",
+            "available": [
+              "mon",
+              "tue",
+              "wed",
+              "thu",
+              "fri"
+            ]
+          }
+        ],
+        "resources": [
+          {
+            "id": "growth-measurement-set",
+            "name": "Child weighing scale and length/height board (outreach set)",
+            "unit": "set",
+            "category": "equipment",
+            "quantity": 1,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "bp-monitor",
+            "name": "Blood pressure monitor",
+            "unit": "device",
+            "category": "equipment",
+            "quantity": 1,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "anc-outreach-supplies",
+            "name": "ANC outreach supplies",
+            "unit": "pack",
+            "category": "supply",
+            "quantity": 8,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "pnc-outreach-supplies",
+            "name": "PNC outreach supplies",
+            "unit": "pack",
+            "category": "supply",
+            "quantity": 6,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "cwc-outreach-supplies",
+            "name": "Child welfare outreach supplies",
+            "unit": "pack",
+            "category": "supply",
+            "quantity": 10,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "motorbike-fuel",
+            "name": "Motorbike fuel",
+            "unit": "litres",
+            "category": "fuel",
+            "quantity": 6,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "vaccine-stock-penta",
+            "name": "Pentavalent vaccine stock (entered by authorised staff)",
+            "unit": "dose",
+            "category": "vaccine",
+            "quantity": 0,
+            "status": "unknown",
+            "verified_at": null
+          }
+        ],
+        "calendar": {
+          "days": {
+            "mon": "static services",
+            "tue": "outreach",
+            "wed": "defaulter tracing and home visits",
+            "thu": "static services",
+            "fri": "school health services"
+          },
+          "enforced": false
+        }
+      },
+      "carelink-facility-nyankpala": {
+        "name": "Nyankpala Health Centre",
+        "staff": [],
+        "vehicles": [
+          {
+            "id": "carelink-facility-nyankpala-motorbike-1",
+            "name": "Health centre motorbike",
+            "available": [
+              "mon",
+              "tue",
+              "wed",
+              "thu",
+              "fri"
+            ]
+          }
+        ],
+        "resources": [
+          {
+            "id": "growth-measurement-set",
+            "name": "Child weighing scale and length/height board (outreach set)",
+            "unit": "set",
+            "category": "equipment",
+            "quantity": 1,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "bp-monitor",
+            "name": "Blood pressure monitor",
+            "unit": "device",
+            "category": "equipment",
+            "quantity": 1,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "anc-outreach-supplies",
+            "name": "ANC outreach supplies",
+            "unit": "pack",
+            "category": "supply",
+            "quantity": 4,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "pnc-outreach-supplies",
+            "name": "PNC outreach supplies",
+            "unit": "pack",
+            "category": "supply",
+            "quantity": 3,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "cwc-outreach-supplies",
+            "name": "Child welfare outreach supplies",
+            "unit": "pack",
+            "category": "supply",
+            "quantity": 5,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "motorbike-fuel",
+            "name": "Motorbike fuel",
+            "unit": "litres",
+            "category": "fuel",
+            "quantity": 4,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "vaccine-stock-penta",
+            "name": "Pentavalent vaccine stock (entered by authorised staff)",
+            "unit": "dose",
+            "category": "vaccine",
+            "quantity": 0,
+            "status": "unknown",
+            "verified_at": null
+          }
+        ],
+        "calendar": {
+          "days": {
+            "mon": "static clinic",
+            "tue": "outreach",
+            "wed": "defaulter tracing and home visits",
+            "thu": "static clinic"
+          },
+          "enforced": false
+        }
+      },
+      "carelink-facility-wantugu": {
+        "name": "Wantugu Health Centre",
+        "staff": [],
+        "vehicles": [
+          {
+            "id": "carelink-facility-wantugu-motorbike-1",
+            "name": "Health centre motorbike",
+            "available": [
+              "mon",
+              "tue",
+              "wed",
+              "thu",
+              "fri"
+            ]
+          }
+        ],
+        "resources": [
+          {
+            "id": "growth-measurement-set",
+            "name": "Child weighing scale and length/height board (outreach set)",
+            "unit": "set",
+            "category": "equipment",
+            "quantity": 1,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "bp-monitor",
+            "name": "Blood pressure monitor",
+            "unit": "device",
+            "category": "equipment",
+            "quantity": 1,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "anc-outreach-supplies",
+            "name": "ANC outreach supplies",
+            "unit": "pack",
+            "category": "supply",
+            "quantity": 4,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "pnc-outreach-supplies",
+            "name": "PNC outreach supplies",
+            "unit": "pack",
+            "category": "supply",
+            "quantity": 3,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "cwc-outreach-supplies",
+            "name": "Child welfare outreach supplies",
+            "unit": "pack",
+            "category": "supply",
+            "quantity": 5,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "motorbike-fuel",
+            "name": "Motorbike fuel",
+            "unit": "litres",
+            "category": "fuel",
+            "quantity": 4,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "vaccine-stock-penta",
+            "name": "Pentavalent vaccine stock (entered by authorised staff)",
+            "unit": "dose",
+            "category": "vaccine",
+            "quantity": 0,
+            "status": "unknown",
+            "verified_at": null
+          }
+        ],
+        "calendar": {
+          "days": {
+            "mon": "static clinic",
+            "tue": "outreach",
+            "wed": "defaulter tracing and home visits",
+            "thu": "static clinic"
+          },
+          "enforced": false
+        }
+      },
+      "carelink-facility-kpendua": {
+        "name": "Kpendua CHPS",
+        "staff": [],
+        "vehicles": [
+          {
+            "id": "carelink-facility-kpendua-motorbike-1",
+            "name": "CHPS motorbike",
+            "available": [
+              "mon",
+              "tue",
+              "wed",
+              "thu",
+              "fri"
+            ]
+          }
+        ],
+        "resources": [
+          {
+            "id": "growth-measurement-set",
+            "name": "Child weighing scale and length/height board (outreach set)",
+            "unit": "set",
+            "category": "equipment",
+            "quantity": 1,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "bp-monitor",
+            "name": "Blood pressure monitor",
+            "unit": "device",
+            "category": "equipment",
+            "quantity": 1,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "anc-outreach-supplies",
+            "name": "ANC outreach supplies",
+            "unit": "pack",
+            "category": "supply",
+            "quantity": 4,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "pnc-outreach-supplies",
+            "name": "PNC outreach supplies",
+            "unit": "pack",
+            "category": "supply",
+            "quantity": 3,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "cwc-outreach-supplies",
+            "name": "Child welfare outreach supplies",
+            "unit": "pack",
+            "category": "supply",
+            "quantity": 5,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "motorbike-fuel",
+            "name": "Motorbike fuel",
+            "unit": "litres",
+            "category": "fuel",
+            "quantity": 4,
+            "status": "simulated",
+            "verified_at": null
+          },
+          {
+            "id": "vaccine-stock-penta",
+            "name": "Pentavalent vaccine stock (entered by authorised staff)",
+            "unit": "dose",
+            "category": "vaccine",
+            "quantity": 0,
+            "status": "unknown",
+            "verified_at": null
+          }
+        ],
+        "calendar": {
+          "days": {
+            "mon": "static clinic",
+            "tue": "outreach",
+            "wed": "defaulter tracing and home visits",
+            "thu": "static clinic"
+          },
+          "enforced": false
+        }
+      }
+    }
+  }
+}

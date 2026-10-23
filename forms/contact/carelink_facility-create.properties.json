@@ -1,0 +1,7 @@
+{
+  "title": "Add facility",
+  "context": {
+    "person": false,
+    "place": false
+  }
+}

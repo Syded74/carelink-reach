@@ -1,0 +1,75 @@
+{
+ "generated": {
+  "contact:carelink_household": 113,
+  "report:carelink_request": 66,
+  "report:carelink_household_contact": 15,
+  "report:carelink_coordination": 102,
+  "contact:carelink_individual": 92,
+  "report:carelink_pregnancy": 44,
+  "report:carelink_anc_visit": 35,
+  "report:carelink_mch_referral": 22,
+  "report:carelink_task_resolution": 131,
+  "report:carelink_delivery": 12,
+  "report:carelink_pnc_visit": 12,
+  "report:carelink_cwc_visit": 39,
+  "report:carelink_appointment": 53,
+  "report:carelink_visit": 22,
+  "report:carelink_oi_review": 263,
+  "report:carelink_oi_outreach_day": 94,
+  "report:carelink_information": 1,
+  "report:carelink_resource_status": 12,
+  "report:carelink_oi_request": 91,
+  "report:carelink_oi_ack": 263,
+  "report:carelink_oi_assignment": 97,
+  "report:carelink_oi_day_plan": 97,
+  "report:carelink_oi_followup_link": 285,
+  "report:carelink_oi_request_link": 44,
+  "report:carelink_oi_proposal": 91
+ },
+ "uncertain": {},
+ "operational": {
+  "report:carelink_oi_request": 20,
+  "report:carelink_oi_review": 12,
+  "report:carelink_oi_outreach_day": 2,
+  "contact:carelink_individual": 5,
+  "(config)": 5,
+  "contact:carelink_community": 12,
+  "contact:carelink_district": 1,
+  "contact:carelink_facility": 4,
+  "report:carelink_oi_ack": 12,
+  "report:carelink_oi_assignment": 2,
+  "report:carelink_oi_day_plan": 2,
+  "report:carelink_oi_demand": 44,
+  "report:carelink_oi_proposal": 20,
+  "contact:carelink_region": 1,
+  "form": 51,
+  "translations": 10,
+  "meta": 1,
+  "user-settings": 7,
+  "target": 3,
+  "report:training:admin_welcome": 1,
+  "ui-extension": 1
+ },
+ "tasks": {
+  "generated": 333,
+  "other": 241
+ },
+ "dependencies": {
+  "generated_total": 2096,
+  "operational_records_referencing_generated": 0,
+  "operational_records_referencing_generated_by_form": {},
+  "contacts_with_children": 50
+ },
+ "summary": {
+  "total_documents": 2886,
+  "generated": 2096,
+  "uncertain_preserved": 0,
+  "operational": 216,
+  "task_documents": {
+   "generated": 333,
+   "other": 241
+  },
+  "note": "Read-only preview. Nothing was changed. Uncertain records are preserved. Operational indicators already exclude generated records (lib/test-records.js), so removing them would not change those counts; it would remove test tasks and test plans from task lists and the planning tab."
+ },
+ "timestamp": "2026-10-22T21:41:23.293Z"
+}

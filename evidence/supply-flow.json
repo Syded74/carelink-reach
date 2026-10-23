@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-22T21:49:19.614Z",
+  "steps": [
+    {
+      "step": "1. Generated Tolon demand: three children with child welfare appointments due today and one mother with an ANC follow-up",
+      "passed": true
+    },
+    {
+      "step": "2. Coordinator recorded \"Child welfare outreach supplies: unknown\" with the Resource readiness form; the server stamped her as author",
+      "passed": true
+    },
+    {
+      "step": "3. With the supplies unknown, the plan schedules no child welfare visit, asks for confirmation, and still plans the ANC follow-up",
+      "passed": true,
+      "detail": {
+        "explanation": [
+          "Child welfare outreach supplies (unknown): confirm availability to plan the services that need it."
+        ]
+      }
+    },
+    {
+      "step": "4. With 1 pack confirmed, exactly one child welfare visit is planned and the plan names the limiting supply",
+      "passed": true,
+      "detail": {
+        "resource_plan": {
+          "name": "Child welfare outreach supplies",
+          "unit": "pack",
+          "planned": 1,
+          "available": 1,
+          "status": "confirmed",
+          "verified_at": "2026-10-22",
+          "source": "readiness record in CHT",
+          "binding": true
+        }
+      }
+    },
+    {
+      "step": "5. With 10 packs confirmed, 3 child welfare visits are planned; the plan records an allocation and the recorded stock is unchanged",
+      "passed": true
+    },
+    {
+      "step": "6. The coordinator could not approve her own plan; the supervisor approved it and the CHO assignment carries the planned visit types",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

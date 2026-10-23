@@ -1,0 +1,6 @@
+/* CareLink Reach: hide Storage info, Training materials, About and Report bug from both menus.
+   Used on the Azure server (official CHT 5.3.0 images), where core-patches/0002 cannot be applied:
+   appended to a copy of the image's webapp styles.css and mounted over it (see docs/guides/AZURE_DEMO_DEPLOYMENT.md). */
+mat-sidenav .nav-item.storage-info, #header-dropdown li:has(> a.storage-info),
+mat-sidenav a.nav-item[href$="/trainings"], mat-sidenav a.nav-item[href$="/about"], mat-sidenav a.nav-item:has(.fa-bug),
+#header-dropdown li:has(a[href$="/trainings"]), #header-dropdown li:has(a[href$="/about"]), #header-dropdown li:has(.fa-bug) { display: none !important; }

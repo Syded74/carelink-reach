@@ -1,0 +1,72 @@
+--- a/webapp/src/css/variables.less	2026-10-21 15:00:32
++++ b/webapp/src/css/variables.less	2026-10-21 15:00:45
+@@ -6,10 +6,16 @@
+ @mat-inverse-icon-color: @white;
+ @mat-font-color: @gray-ultra-dark;
+ 
++/* CareLink Reach brand tokens (core patch: carelink-reach-config/core-patches) */
++@carelink-primary: #0E7A53;
++@carelink-primary-dark: #0A5C3E;
++@carelink-mint: #D1FAE5;
++@carelink-background: #F1FDF5;
++
+ @top-header-color: @gray-ultra-dark;
+-@tab-navbar-color: @medium-black;
+-@tab-selected-color: @grey-darker;
+-@background-color: @gray-ultra-light;
++@tab-navbar-color: @carelink-primary;
++@tab-selected-color: @carelink-primary-dark;
++@background-color: @carelink-background;
+ @target-card-background-color: @gray-ultra-lighter;
+ @target-card-border-color: @gray-light;
+ @form-background-color: @white;
+@@ -60,17 +66,17 @@
+ @nav-icon-gray: @silver-gray;
+ 
+ /* tab colors */
+-@messages-color: @blue;
++@messages-color: @carelink-primary;
+ @messages-highlight: @blue-highlight;
+-@tasks-color: @periwinkle;
++@tasks-color: @carelink-primary;
+ @tasks-highlight: @periwinkle-highlight;
+-@contacts-color: @pink;
++@contacts-color: @carelink-primary;
+ @contacts-highlight: @pink-highlight;
+-@reports-color: @yellow;
++@reports-color: @carelink-primary;
+ @reports-highlight: @yellow-highlight;
+ @training-color: @gray-medium;
+ @training-highlight: @gray-ultra-lighter;
+-@analytics-color: @teal;
++@analytics-color: @carelink-primary;
+ @analytics-highlight: @teal-highlight;
+ @admin-color: @gray-dark;
+ @help-color: @gray-dark;
+--- a/webapp/src/css/inbox.less	2026-10-21 15:00:32
++++ b/webapp/src/css/inbox.less	2026-10-21 15:00:45
+@@ -35,19 +35,19 @@
+       background-color: var(--accent-color, @top-header-color);
+     }
+     &.messages .tool-bar {
+-      background-color: @messages-color;
++      background-color: @carelink-mint;
+     }
+     &.tasks .tool-bar {
+-      background-color: @tasks-color;
++      background-color: @carelink-mint;
+     }
+     &.reports .tool-bar {
+-      background-color: @reports-color;
++      background-color: @carelink-mint;
+     }
+     &.analytics .tool-bar {
+-      background-color: @analytics-color;
++      background-color: @carelink-mint;
+     }
+     &.contacts .tool-bar {
+-      background-color: @contacts-color;
++      background-color: @carelink-mint;
+     }
+     &.error .tool-bar,
+     &testing .tool-bar {

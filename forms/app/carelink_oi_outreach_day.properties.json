@@ -1,0 +1,10 @@
+{
+  "title": "Record the outreach day",
+  "icon": "carelink-outreach",
+  "context": {
+    "person": false,
+    "place": false,
+    "expression": "false",
+    "permission": "can_carelink_visit"
+  }
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CareLink Reach — Outreach Intelligence</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="mark" aria-hidden="true"></span><div><strong>CareLink Reach</strong><span>Outreach Intelligence</span></div></div>
+  <div id="who" class="who" hidden><span id="who-name"></span><button id="logout" class="ghost" type="button">Sign out</button></div>
+</header>
+<p class="banner" role="note">Fictional demonstration data. Plans are recommendations for a facility coordinator; approval here is not an institutional authorisation and creates no CHT assignment. Danger signs follow referral procedures and never wait for this planner.</p>
+
+<main>
+  <section id="login" class="card narrow" hidden>
+    <h1>Sign in</h1>
+    <p class="muted">Use a CareLink facility coordinator or supervisor account from CHT.</p>
+    <form id="login-form">
+      <label>Username <input name="username" autocomplete="username" required></label>
+      <label>Password <input name="password" type="password" autocomplete="current-password" required></label>
+      <button type="submit">Sign in</button>
+      <p id="login-error" class="error" role="alert"></p>
+    </form>
+  </section>
+
+  <section id="app" hidden>
+    <div class="toolbar">
+      <label>Dataset <select id="dataset"></select></label>
+      <nav class="tabs" role="tablist">
+        <button role="tab" data-tab="demand" aria-selected="true">1 · Community demand</button>
+        <button role="tab" data-tab="planner">2 · Outreach planner</button>
+        <button role="tab" data-tab="schedule">3 · Recommended schedule</button>
+        <button role="tab" data-tab="review">4 · Review and approval</button>
+      </nav>
+    </div>
+    <div id="tab-demand" class="tab"></div>
+    <div id="tab-planner" class="tab" hidden></div>
+    <div id="tab-schedule" class="tab" hidden></div>
+    <div id="tab-review" class="tab" hidden></div>
+  </section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-10-22T21:52:59.581Z",
+  "steps": [
+    {
+      "step": "1. Volunteer recorded two routine requests (child welfare; antenatal) for two Tolon households",
+      "passed": true,
+      "detail": {
+        "households": [
+          "Abdulai-Baba Household, House 368",
+          "Abdulai-Awal Household, House 369"
+        ]
+      }
+    },
+    {
+      "step": "2. Coordinator received both synchronized requests and accepted them (append-only coordination events)",
+      "passed": true
+    },
+    {
+      "step": "3. The engine (OR-Tools CP-SAT) planned 7 routine item(s) in Tolon on 2026-10-23, from the synchronized requests",
+      "passed": true
+    },
+    {
+      "step": "4. Coordinator submitted and the supervisor independently reviewed; two simultaneous approvals were both refused as a conflict; an approval saved offline was accepted only after it synced",
+      "passed": true
+    },
+    {
+      "step": "5. The approved day 2026-10-23 references exactly the two open requests (stable links in each request's lifecycle); a second approved plan for 2026-11-27 took on neither",
+      "passed": true,
+      "detail": {
+        "second_plan": "approved, day plan holds 0 request(s)"
+      }
+    },
+    {
+      "step": "6. CHO recorded household A's visit offline; after an offline reload it synced, stamped with her username and linked to the approved day",
+      "passed": true
+    },
+    {
+      "step": "7–8. Household A's request is completed through its own lifecycle; household B's request stays open (scheduled)",
+      "passed": true
+    },
+    {
+      "step": "9. The day shows planned 2 · completed 1 · still open 1; the CHO's outreach-day form listed both households, and recording the day as partly done closed nothing",
+      "passed": true
+    },
+    {
+      "step": "10. Next forecasting input: pending Tolon work rose by 2 with the new requests and fell by 1 after the visit; visits completed rose by 1; operational demand (test records excluded) never changed",
+      "passed": true,
+      "detail": {
+        "before": {
+          "pending_now": 5,
+          "requests_this_week": 69,
+          "visits_completed_this_week": 107
+        },
+        "requests": {
+          "pending_now": 7,
+          "requests_this_week": 71,
+          "visits_completed_this_week": 107
+        },
+        "after_visit": {
+          "pending_now": 6,
+          "requests_this_week": 71,
+          "visits_completed_this_week": 108
+        }
+      }
+    },
+    {
+      "step": "11. Re-sending the same visit was refused (forbidden); state, day plan, links and forecast inputs are unchanged after further planning cycles",
+      "passed": true
+    }
+  ],
+  "closed_leftover_test_requests": 0,
+  "passed": true,
+  "limits": [
+    "Chrome DevTools network emulation, not a physical device.",
+    "Households and requests are made up and marked record_origin test."
+  ]
+}

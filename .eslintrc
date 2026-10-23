@@ -1,0 +1,16 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "globals": {
+    "contact": true,
+    "reports": true,
+    "lineage": true,
+    "user": true
+  },
+  "rules": {}
+}

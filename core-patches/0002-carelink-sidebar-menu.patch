@@ -1,0 +1,96 @@
+--- a/webapp/src/ts/services/header-tabs.service.ts
++++ b/webapp/src/ts/services/header-tabs.service.ts
+@@ -73,22 +73,9 @@
+     { ...this.ANALYTICS_TAB, permissions: ['can_view_analytics', 'can_view_analytics_tab'] }
+   ];
+ 
++  // CareLink Reach (core-patches/0002): Training materials, About and Report bug removed from the side menu.
+   private readonly SIDEBAR_TABS: SidebarTab[] = [
+     {
+-      name: 'trainings',
+-      route: 'trainings',
+-      defaultIcon: 'fa-graduation-cap',
+-      translation: 'training_materials.page.title',
+-      permissions: [],
+-    },
+-    {
+-      name: 'about',
+-      route: 'about',
+-      defaultIcon: 'fa-question',
+-      translation: 'about',
+-      permissions: [],
+-    },
+-    {
+       name: 'user',
+       route: 'user',
+       defaultIcon: 'fa-user',
+@@ -102,12 +89,6 @@
+       translation: 'privacy.policy',
+       permissions: [],
+     },
+-    {
+-      name: 'bug',
+-      defaultIcon: 'fa-bug',
+-      translation: 'Report Bug',
+-      permissions: [],
+-    },
+   ];
+ 
+   private readonly DEFAULT_UI_EXTENSION_WEIGHT = this.DEFAULT_TABS.length + 1;
+--- a/webapp/src/ts/components/sidebar-menu/sidebar-menu.component.html
++++ b/webapp/src/ts/components/sidebar-menu/sidebar-menu.component.html
+@@ -14,26 +14,7 @@
+           <span>{{ 'admin.app.name' | translate }}</span>
+         </a>
+ 
+-        <a class="nav-item column storage-info"
+-          mmAuth 
+-          [mmAuthOnline]="false" 
+-          [class.disabled]="true">
+-          <mat-icon fontIcon="fa-hdd-o" class="progress-bar-icon"></mat-icon>
+-          <div id="content">
+-            <strong>{{'Storage Info' | translate}}</strong>
+-            <div class="progress-bar-container">
+-              <div
+-                id="storage-pressure-progress-bar"
+-                class="progress-bar"
+-                [ngClass]="storagePressureClass"
+-                [style.width.%]="storageUsagePercentage"
+-                [title]="'Used: ' + storageUsagePercentage.toFixed(2) + '%'"
+-                [attr.aria-label]="('storage.used' | translate) + ': ' + storageUsagePercentage.toFixed(2) + '%'">
+-              </div>
+-            </div>
+-            <span>{{ 'storage.available.space' | translate }}: {{availableStorageSpace}}</span>
+-          </div>
+-        </a>
++        <!-- CareLink Reach (core-patches/0002): Storage info removed from the side menu. -->
+       </div>
+ 
+       <div class="nav-section">
+--- a/webapp/src/ts/components/header/header.component.html
++++ b/webapp/src/ts/components/header/header.component.html
+@@ -16,23 +16,7 @@
+         </a>
+         <ul id="header-dropdown" *dropdownMenu class="dropdown-menu mm-dropdown-menu" role="menu" aria-labelledby="header-dropdown-link">
+ 
+-          <li mmAuth [mmAuthOnline]="false">
+-            <a role="menuitem" class="storage-info">
+-              <i class="fa fa-fw fa-hdd-o"></i>
+-              <strong>{{'Storage Info' | translate}}</strong>
+-              <div class="progress-bar-container">
+-                <div
+-                  id="storage-pressure-progress-bar"
+-                  class="progress-bar"
+-                  [ngClass]="storagePressureClass"
+-                  [style.width.%]="storageUsagePercentage"
+-                  [title]="'Used: ' + storageUsagePercentage.toFixed(2) + '%'"
+-                  [attr.aria-label]="('storage.used' | translate) + ': ' + storageUsagePercentage.toFixed(2) + '%'">
+-                </div>
+-              </div>
+-              <span>{{ 'storage.available.space' | translate }}: {{availableStorageSpace}}</span>
+-            </a>
+-          </li>
++          <!-- CareLink Reach (core-patches/0002): Storage info removed from the menu. -->
+ 
+           <li role="presentation disabled" *ngIf="!replicationStatus.disabled" [ngClass]="{ 'disabled': replicationStatus.current?.disableSyncButton }">
+             <a role="menuitem" tabindex="-1" (click)="!replicationStatus.current?.disableSyncButton && replicate()">

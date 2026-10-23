@@ -1,0 +1,10 @@
+{
+  "title": "Review or update request",
+  "icon": "carelink-outreach",
+  "context": {
+    "person": false,
+    "place": true,
+    "expression": "contact.contact_type === 'carelink_household' && (user.carelink_role === 'carelink_coordinator')",
+    "permission": "can_carelink_coordinate"
+  }
+}

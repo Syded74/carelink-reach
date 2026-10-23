@@ -1,0 +1,29 @@
+{
+  "demo": true,
+  "note": "FICTIONAL planning resources for the CareLink Reach demo. Travel times are invented estimates, not measured routes. Replace with facility-confirmed values before any real use.",
+  "facility": "carelink-demo-facility",
+  "horizon_working_days": 5,
+  "working_days": ["mon", "tue", "wed", "thu", "fri"],
+  "working_hours": { "start": "08:00", "end": "16:00" },
+  "service_minutes_per_household": 35,
+  "max_households_per_worker_per_day": 6,
+  "staff": [
+    { "id": "carelink-demo-cho-1", "name": "Salamatu Abukari", "role": "CHO", "available": ["mon", "tue", "wed", "thu", "fri"] },
+    { "id": "carelink-demo-cho-2", "name": "Ibrahim Sumani", "role": "CHO", "available": ["tue", "thu"] }
+  ],
+  "vehicles": [
+    { "id": "motorbike-1", "name": "Facility motorbike (fictional)", "available": ["mon", "tue", "wed", "thu", "fri"] }
+  ],
+  "travel_minutes": {
+    "dry": {
+      "carelink-demo-facility": { "carelink-demo-community-1": 40, "carelink-demo-community-2": 55, "carelink-demo-community-3": 95 },
+      "carelink-demo-community-1": { "carelink-demo-community-2": 25, "carelink-demo-community-3": 70 },
+      "carelink-demo-community-2": { "carelink-demo-community-3": 50 }
+    },
+    "rainy": {
+      "carelink-demo-facility": { "carelink-demo-community-1": 60, "carelink-demo-community-2": 85, "carelink-demo-community-3": 150 },
+      "carelink-demo-community-1": { "carelink-demo-community-2": 40, "carelink-demo-community-3": 110 },
+      "carelink-demo-community-2": { "carelink-demo-community-3": 80 }
+    }
+  }
+}

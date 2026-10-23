@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-10-22T22:06:57.130Z",
+  "device": "23076RN8DY · Android 15",
+  "app": "org.medicmobile.webapp.mobile.carelink_reach_local",
+  "steps": [
+    {
+      "step": "V1. Volunteer signed in on the phone; a new Tolon household reached it by sync",
+      "passed": true,
+      "where": "physical device"
+    },
+    {
+      "step": "V2. With the server unreachable, the volunteer saved a routine ANC request on the phone; nothing reached the server",
+      "passed": true,
+      "where": "physical device"
+    },
+    {
+      "step": "V3. After force-stopping and restarting the app while still offline, the request is still on the phone (household shows \"Not yet acknowledged by the facility\")",
+      "passed": true,
+      "where": "physical device"
+    },
+    {
+      "step": "V4. Reconnected: exactly one request reached the server with its answers; further syncs created no duplicate",
+      "passed": true,
+      "where": "physical device",
+      "detail": {
+        "request": "01a165a7-a3d2-7116-9741-30f01d49091a"
+      }
+    },
+    {
+      "step": "C1. CHO signed in on the phone (after the volunteer's data had synced); the mother's ANC follow-up is planned on the approved 2026-10-23 Dimabi day and shows on her profile",
+      "passed": true,
+      "where": "physical device"
+    },
+    {
+      "step": "C2. With the server unreachable, the CHO resolved the follow-up from her task on the phone",
+      "passed": true,
+      "where": "physical device"
+    },
+    {
+      "step": "C3. After restarting the app offline, the resolution is still on the phone (the task stays resolved)",
+      "passed": true,
+      "where": "physical device"
+    },
+    {
+      "step": "C4. Reconnected: one resolution reached the server, stamped with the CHO and the approved day; the day counts it as completed; further syncs created no duplicate",
+      "passed": true,
+      "where": "physical device",
+      "detail": {
+        "completed": 1,
+        "planned": 1
+      }
+    }
+  ],
+  "passed": true,
+  "notes": [
+    "Offline = the app cannot reach the CHT server (USB port forward removed); the phone itself was not put in airplane mode.",
+    "Fixture records (households, mother, plan decisions) were written through the CHT API as the real users; the browser suites cover those steps in the UI.",
+    "The phone ends signed in as the CHO (sabukari)."
+  ]
+}

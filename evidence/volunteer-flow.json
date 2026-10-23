@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-10-22T21:56:13.888Z",
+  "steps": [
+    {
+      "step": "1. Volunteer signs in; tabs shown",
+      "passed": true,
+      "tabs": [
+        "Reports",
+        "People"
+      ]
+    },
+    {
+      "step": "2. Tolon offers only \"New household\" to the volunteer",
+      "passed": true,
+      "offered": [
+        "Add household"
+      ]
+    },
+    {
+      "step": "3. Household registered in Tolon, linked to CHO Salamatu Abukari and to the volunteer who registered it (on server)",
+      "passed": true,
+      "household": "01a1659d-88da-7ff7-a768-9b06149b994c"
+    },
+    {
+      "step": "3b. Registering the same household again shows \"Possible duplicate contacts found\" and saves nothing",
+      "passed": true
+    },
+    {
+      "step": "4. Household offers Request help and no clinical forms",
+      "passed": true,
+      "offered": [
+        "Information and audio availability",
+        "Request help",
+        "View confirmed nurse visits"
+      ]
+    },
+    {
+      "step": "5. Request for antenatal care with transport barrier and >1 hour travel reached the server; profile shows \"Not yet acknowledged\"; Request help replaced by Record household contact",
+      "passed": true,
+      "request": "01a1659d-c3e2-744e-85b8-f6d378a6e281",
+      "offered": [
+        "Information and audio availability",
+        "Record household contact",
+        "View confirmed nurse visits"
+      ]
+    },
+    {
+      "step": "6. Second phone saved a request while offline; it survives an offline reload and is not on the server yet",
+      "passed": true
+    },
+    {
+      "step": "7. After sync both requests are on the server and the volunteer sees \"Possible duplicate requests\"",
+      "passed": true
+    },
+    {
+      "step": "8. Household contact recorded offline, kept after reload, then synchronized and linked to the open request",
+      "passed": true
+    },
+    {
+      "step": "9. Coordinator received both requests as \"Review outreach request\" tasks",
+      "passed": true
+    },
+    {
+      "step": "10. Coordinator closed the duplicate and accepted the request (append-only events on server)",
+      "passed": true
+    },
+    {
+      "step": "11. Volunteer sees \"Acknowledged by the facility: accepted\" and the duplicate as cancelled; the warning is gone",
+      "passed": true
+    },
+    {
+      "step": "12. Volunteer replicates Tolon households, requests and contacts; not other communities or clinical reports (read attempts return 403/403)",
+      "passed": true
+    },
+    {
+      "step": "13. Server refused volunteer writes of ANC, referral, coordination decisions, individuals and communities",
+      "passed": true,
+      "refused": {
+        "ANC visit": "Your role is not authorised to submit carelink_anc_visit.",
+        "Referral": "Your role is not authorised to submit carelink_mch_referral.",
+        "Coordination decision": "Your role is not authorised to submit carelink_coordination.",
+        "Individual": "Community volunteers can only add or edit households.",
+        "Community": "forbidden"
+      }
+    }
+  ],
+  "passed": true,
+  "limits": [
+    "Chrome DevTools network emulation, not a physical Android airplane-mode test.",
+    "Initial login and first synchronization were online."
+  ]
+}

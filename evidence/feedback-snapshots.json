@@ -1,0 +1,114 @@
+{
+  "0-before": {
+    "with_test_records": {
+      "pending_now": 5,
+      "requests_this_week": 69,
+      "visits_completed_this_week": 107
+    },
+    "operational": {
+      "pending_now": 0,
+      "requests_this_week": 0,
+      "visits_completed_this_week": 0
+    },
+    "forecaster_with_test_records": {
+      "pending_now": 5,
+      "requests_this_week": 69,
+      "visits_completed_this_week": 107,
+      "this_week_reported": true,
+      "reported_weeks_of_12": 7,
+      "estimate_next_week": 29.8,
+      "method": "mean_4",
+      "recent_mean": 29.8,
+      "reporting_quality": {
+        "missing_weeks": 34,
+        "reported_zero_weeks": 0,
+        "coverage_period_end": "2026-10-19",
+        "volunteer_denominator_available": false
+      }
+    }
+  },
+  "1-requests-recorded": {
+    "with_test_records": {
+      "pending_now": 7,
+      "requests_this_week": 71,
+      "visits_completed_this_week": 107
+    },
+    "operational": {
+      "pending_now": 0,
+      "requests_this_week": 0,
+      "visits_completed_this_week": 0
+    },
+    "forecaster_with_test_records": {
+      "pending_now": 7,
+      "requests_this_week": 71,
+      "visits_completed_this_week": 107,
+      "this_week_reported": true,
+      "reported_weeks_of_12": 7,
+      "estimate_next_week": 30.2,
+      "method": "mean_4",
+      "recent_mean": 30.2,
+      "reporting_quality": {
+        "missing_weeks": 34,
+        "reported_zero_weeks": 0,
+        "coverage_period_end": "2026-10-19",
+        "volunteer_denominator_available": false
+      }
+    }
+  },
+  "2-after-visit": {
+    "with_test_records": {
+      "pending_now": 6,
+      "requests_this_week": 71,
+      "visits_completed_this_week": 108
+    },
+    "operational": {
+      "pending_now": 0,
+      "requests_this_week": 0,
+      "visits_completed_this_week": 0
+    },
+    "forecaster_with_test_records": {
+      "pending_now": 6,
+      "requests_this_week": 71,
+      "visits_completed_this_week": 108,
+      "this_week_reported": true,
+      "reported_weeks_of_12": 7,
+      "estimate_next_week": 30.2,
+      "method": "mean_4",
+      "recent_mean": 30.2,
+      "reporting_quality": {
+        "missing_weeks": 34,
+        "reported_zero_weeks": 0,
+        "coverage_period_end": "2026-10-19",
+        "volunteer_denominator_available": false
+      }
+    }
+  },
+  "3-after-duplicate-sync": {
+    "with_test_records": {
+      "pending_now": 6,
+      "requests_this_week": 71,
+      "visits_completed_this_week": 108
+    },
+    "operational": {
+      "pending_now": 0,
+      "requests_this_week": 0,
+      "visits_completed_this_week": 0
+    },
+    "forecaster_with_test_records": {
+      "pending_now": 6,
+      "requests_this_week": 71,
+      "visits_completed_this_week": 108,
+      "this_week_reported": true,
+      "reported_weeks_of_12": 7,
+      "estimate_next_week": 30.2,
+      "method": "mean_4",
+      "recent_mean": 30.2,
+      "reporting_quality": {
+        "missing_weeks": 34,
+        "reported_zero_weeks": 0,
+        "coverage_period_end": "2026-10-19",
+        "volunteer_denominator_available": false
+      }
+    }
+  }
+}

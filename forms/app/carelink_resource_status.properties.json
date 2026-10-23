@@ -1,0 +1,10 @@
+{
+  "title": "Resource readiness",
+  "icon": "carelink-followup",
+  "context": {
+    "person": false,
+    "place": true,
+    "expression": "contact.contact_type === 'carelink_facility' && (user.carelink_role === 'carelink_coordinator' || user.carelink_role === 'carelink_supervisor')",
+    "permission": "can_carelink_oi"
+  }
+}

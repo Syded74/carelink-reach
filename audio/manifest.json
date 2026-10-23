@@ -1,0 +1,14 @@
+{
+  "enabled": false,
+  "reason": "No reviewed recordings or speaker permissions supplied",
+  "recordings": [],
+  "required_metadata": [
+    "language",
+    "source_script",
+    "speaker_permission",
+    "reviewer",
+    "approval_status",
+    "version",
+    "sha256"
+  ]
+}
